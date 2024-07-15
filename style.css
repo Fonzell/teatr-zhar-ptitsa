@@ -1,11 +1,11 @@
 @font-face {
   font-family: Nunito;
-  src: url(/src/fonts/Nunito/Nunito-VariableFont_wght.ttf) format("truetype");
+  src: url(src/fonts/Nunito/Nunito-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
   font-family: NunitoSans;
-  src: url(/src/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+  src: url(src/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\opsz\wdth\wght.ttf);
 }
 
 :root {
