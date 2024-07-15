@@ -388,7 +388,7 @@ section .title h2 {
 
 @media (width<1260px) {
   .poster-shows .show .location {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -594,7 +594,7 @@ footer address .phone-numbers > a {
 @media (width<1260px) {
   .swiper-button-prev,
   .swiper-button-next {
-    display: none;
+    display: none !important;
   }
 }
 
