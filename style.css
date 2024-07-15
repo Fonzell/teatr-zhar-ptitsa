@@ -386,6 +386,12 @@ section .title h2 {
   text-decoration: underline;
 }
 
+@media (width<1260px) {
+  .poster-shows .show .location {
+    display: block;
+  }
+}
+
 .upcoming-shows .show .location .info:hover + .more,
 .upcoming-shows .show .location .more:hover,
 .poster-shows .show .location .info:hover + .more,
@@ -583,6 +589,13 @@ footer address .phone-numbers > a {
 .swiper-button-prev,
 .swiper-button-next {
   --swiper-navigation-size: 60px;
+}
+
+@media (width<1260px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
 }
 
 .swiper-button-prev {
