@@ -1,11 +1,169 @@
 @font-face {
-  font-family: Nunito;
-  src: url(src/fonts/Nunito/Nunito-VariableFont_wght.ttf) format("truetype");
+  font-family: NunitoVar;
+  src: url(src/fonts/Nunito/Nunito-VariableFont.ttf) format("truetype");
 }
 
 @font-face {
   font-family: NunitoSans;
-  src: url(src/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\opsz\wdth\wght.ttf);
+  src: url(src/fonts/Nunito_Sans/NunitoSans-VariableFont.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NunitoBlack;
+  src: url(src/fonts/Nunito/static/Nunito-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NunitoBold;
+  src: url(src/fonts/Nunito/static/Nunito-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NunitoExtraBold;
+  src: url(src/fonts/Nunito/static/Nunito-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NunitoExtraLight;
+  src: url(src/fonts/Nunito/static/Nunito-ExtraLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NunitoLight;
+  src: url(src/fonts/Nunito/static/Nunito-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NunitoMedium;
+  src: url(src/fonts/Nunito/static/Nunito-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NunitoRegular;
+  src: url(src/fonts/Nunito/static/Nunito-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: NunitoSemiBold;
+  src: url(src/fonts/Nunito/static/Nunito-SemiBold.ttf) format("truetype");
+}
+
+.test {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.test h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.test p {
+  font-size: 21px;
+}
+
+.test .single-flie p {
+  font-family: NunitoVar;
+}
+
+.test .single-flie .font1 {
+  font-weight: 200;
+}
+
+.test .single-flie .font2 {
+  font-weight: 300;
+}
+
+.test .single-flie .font3 {
+  font-weight: 400;
+}
+
+.test .single-flie .font4 {
+  font-weight: 500;
+}
+
+.test .single-flie .font5 {
+  font-weight: 600;
+}
+
+.test .single-flie .font6 {
+  font-weight: 700;
+}
+
+.test .single-flie .font7 {
+  font-weight: 800;
+}
+
+.test .single-flie .font8 {
+  font-weight: 900;
+}
+
+.test .multi-flie .font1 {
+  font-family: NunitoExtraLight;
+}
+
+.test .multi-flie .font2 {
+  font-family: NunitoLight;
+}
+
+.test .multi-flie .font3 {
+  font-family: NunitoRegular;
+}
+
+.test .multi-flie .font4 {
+  font-family: NunitoMedium;
+}
+
+.test .multi-flie .font5 {
+  font-family: NunitoSemiBold;
+}
+
+.test .multi-flie .font6 {
+  font-family: NunitoBold;
+}
+
+.test .multi-flie .font7 {
+  font-family: NunitoExtraBold;
+}
+
+.test .multi-flie .font8 {
+  font-family: NunitoBlack;
+}
+
+.test .google-flie p {
+  font-family: Nunito;
+}
+
+.test .google-flie .font1 {
+  font-weight: 200;
+}
+
+.test .google-flie .font2 {
+  font-weight: 300;
+}
+
+.test .google-flie .font3 {
+  font-weight: 400;
+}
+
+.test .google-flie .font4 {
+  font-weight: 500;
+}
+
+.test .google-flie .font5 {
+  font-weight: 600;
+}
+
+.test .google-flie .font6 {
+  font-weight: 700;
+}
+
+.test .google-flie .font7 {
+  font-weight: 800;
+}
+
+.test .google-flie .font8 {
+  font-weight: 900;
 }
 
 :root {
@@ -18,7 +176,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 500 15px/1.5 NunitoSans, Nunito, sans-serif;
+  /* font: 500 15px/1.5 NunitoSans, Nunito, sans-serif; */
+  font: 500 15px/1.5 NunitoSans, sans-serif;
 }
 
 a {
@@ -301,6 +460,7 @@ section .title h2 {
   border: 1px solid #797979;
   border-radius: 15px;
   padding-bottom: 20px;
+  height: auto;
 }
 
 .upcoming-shows .show > time {
@@ -571,7 +731,7 @@ footer address .phone-numbers a {
   font: bold 21px Nunito, sans-serif;
 }
 
-footer address .phone-numbers > a {
+footer address .phone-numbers a:first-of-type {
   display: block;
   margin-bottom: 20px;
 }
@@ -586,10 +746,10 @@ footer address .phone-numbers > a {
   position: relative;
 }
 
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next {
   --swiper-navigation-size: 60px;
-}
+} */
 
 @media (width<1260px) {
   .swiper-button-prev,
@@ -603,8 +763,8 @@ footer address .phone-numbers > a {
 }
 
 .swiper-button-prev:after {
-  content: "🞀" !important;
-  color: var(--primary-color);
+  content: url(src/icons/arrow_left.png) !important;
+  line-height: 0;
 }
 
 .swiper-button-next {
@@ -612,6 +772,6 @@ footer address .phone-numbers > a {
 }
 
 .swiper-button-next:after {
-  content: "🞂" !important;
-  color: var(--primary-color);
+  content: url(src/icons/arrow_right.png) !important;
+  line-height: 0;
 }
