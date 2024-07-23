@@ -1,0 +1,136 @@
+.poster-filter {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.poster-filter a {
+  display: inline-block;
+  font-size: 21px;
+  border: 1px solid #6a6a6a;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h1,
+main h2 {
+  font: 800 45px "Nunito", sans-serif;
+  text-align: center;
+  margin-block: 40px;
+}
+
+.poster-shows .show > p {
+  font: 900 21px "Nunito", sans-serif;
+}
+
+.poster-shows .show .data time {
+  font-weight: 800;
+}
+
+.poster-shows .show a {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  display: block;
+}
+
+.poster-shows .show .location {
+  position: relative;
+  font-weight: 800;
+}
+
+.poster-shows .show .location img {
+  display: inline;
+  width: 15px;
+}
+
+.poster-shows .show .location .subway {
+  font-weight: 800;
+}
+
+.poster-shows .show .location .info {
+  display: inline-block;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+@media (width<1260px) {
+  .poster-shows .show .location {
+    display: block !important;
+  }
+}
+
+.poster-shows .show .location .info:hover + .more,
+.poster-shows .show .location .more:hover {
+  display: block;
+}
+
+.poster-shows .show .location .more {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #797979;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.poster-shows .show .location .more {
+  left: 50px;
+  width: 350px;
+}
+
+.poster-section .title {
+  margin-block: 50px;
+}
+
+.poster-shows .show {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #c6c6c6;
+}
+
+.poster-shows .show > time {
+  font: 900 95px "Nunito", sans-serif;
+  color: var(--primary-color);
+  width: 2ch;
+  margin-inline: 50px;
+  text-align: end;
+}
+
+.poster-shows .show .data {
+  flex-grow: 1;
+}
+
+.poster-shows .show .extra-info {
+  flex-basis: 180px;
+}
+
+.poster-shows .show h3 {
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.poster-shows .show .data time {
+  display: inline-block;
+  margin-right: 20px;
+  width: 240px;
+}
+
+.poster-shows .show .data .location {
+  display: inline;
+}
+
+.poster-shows .show .age {
+  margin-inline: 10px 5px;
+}
+
+.poster-shows:last-child {
+  margin-bottom: 80px;
+}
