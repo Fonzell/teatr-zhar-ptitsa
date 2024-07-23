@@ -60,7 +60,7 @@
 .troupe,
 .production {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 250px);
   justify-content: space-between;
 }
 
