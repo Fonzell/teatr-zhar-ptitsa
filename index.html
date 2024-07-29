@@ -17,9 +17,16 @@
     <script defer src="src/swiper/swiper-config.js"></script>
   </head>
   <body>
-    <a href="pages/shows/shows.html">Спектакли</a>
-    <a href="pages/team/team.html">Коллектив</a>
-    <a href="pages/poster/poster.html">Афиша</a>
+    <div style="display: flex; flex-direction: column">
+      <a href="pages/shows/shows.html">Спектакли</a>
+      <a href="pages/team/team.html">Коллектив</a>
+      <a href="pages/poster/poster.html">Афиша</a>
+      <a href="pages/news/news.html">Новости</a>
+      <a href="pages/news_detail/news_detail.html">Новости - подробнее</a>
+      <a href="pages/news_dk/news_dk.html">Новости ДК</a>
+      <a href="pages/show_detail/show_detail.html">Спектакли - подробнее</a>
+      <a href="pages/show_detail/show_detail.html">История театра</a>
+    </div>
 
     <header>
       <div class="header-top">
@@ -34,7 +41,7 @@
           </a>
 
           <form action="/search" method="get">
-            <input type="text" placeholder="Введите фразу для поиска" />
+            <input type="text" name="search" placeholder="Введите фразу для поиска" />
             <button type="submit">
               <img src="src/icons/search.png" alt="Поиск" />
             </button>

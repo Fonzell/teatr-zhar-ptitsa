@@ -159,6 +159,7 @@ img {
   max-width: 1270px;
   margin-inline: auto;
   min-width: 1060px;
+  padding-inline: 15px;
 }
 
 /* header styles */
@@ -173,7 +174,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding-block: 10px;
 }
 
 .department-wrapper {
@@ -356,6 +357,7 @@ header address .tel {
 }
 
 .selected,
+.header-links a:hover,
 .header-nav a:hover,
 .footer-nav a:hover {
   color: var(--primary-color);
