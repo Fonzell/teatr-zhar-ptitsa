@@ -202,6 +202,10 @@ section .title h2 {
   margin-block: 30px;
 }
 
+.news a p {
+  text-align: justify;
+}
+
 /* poster */
 
 .poster-section .title {

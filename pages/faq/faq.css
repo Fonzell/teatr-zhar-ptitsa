@@ -1,0 +1,151 @@
+main {
+  margin-bottom: 50px;
+}
+
+main h1 {
+  font: 700 45px "Nunito", sans-serif;
+  margin-block: 50px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+main form {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #ededed;
+  border-radius: 5px;
+}
+
+main form .contact-form-title {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+main form :is(input, textarea) {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+main form textarea {
+  resize: none;
+}
+
+main form .footer {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 20px;
+}
+
+main form .footer p {
+  font-size: 12px;
+}
+
+main form button,
+main .accordion button {
+  border: none;
+  cursor: pointer;
+}
+
+main form button {
+  color: #fff;
+  padding: 8px 15px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  display: block;
+  font-weight: 700;
+}
+
+.accordion:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.accordion button {
+  width: 100%;
+  background-color: #f3f6fb;
+  display: flex;
+  align-items: stretch;
+}
+
+.accordion button > :first-child {
+  width: 20px;
+  background-color: var(--primary-color);
+}
+
+.accordion button h2 {
+  flex-grow: 1;
+  font-weight: 800;
+  text-align: start;
+  padding: 10px 0 10px 10px;
+}
+
+.accordion button > :last-child {
+  position: relative;
+  width: 40px;
+}
+
+.accordion .dropdown {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s;
+}
+
+.accordion .dropdown > div {
+  overflow: hidden;
+}
+
+.accordion .dropdown p {
+  margin: 20px;
+  text-align: justify;
+}
+
+.accordion .dropdown ul {
+  margin: 20px 20px 20px 35px;
+  text-align: justify;
+}
+
+.accordion .dropdown a {
+  display: inline-block;
+  color: var(--primary-color);
+  margin: 0 0 20px 20px;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.accordion .link-in-text {
+  display: inline !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+}
+
+.accordion .vertical-line,
+.accordion .horizontal-line {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 10px;
+  background: #000;
+  top: 50%;
+  left: 50%;
+}
+
+.vertical-line {
+  transform: rotate(90deg) translate(-1px, 5px);
+  transition: transform 0.3s ease;
+}
+
+.horizontal-line {
+  transform: translate(-50%, -50%);
+}
+
+.translated {
+  transform: translate(-50%, -50%);
+}
+
+.expanded {
+  grid-template-rows: 1fr !important;
+}

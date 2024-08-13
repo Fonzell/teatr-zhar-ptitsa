@@ -138,7 +138,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: 600 15px/1.5 "Nunito Sans", "Nunito", sans-serif;
+  font: 500 15px/1.5 "Nunito Sans", "Nunito", sans-serif;
 }
 
 body {
@@ -295,13 +295,18 @@ header .media {
   border-radius: 50%;
 }
 
+header address {
+  position: relative;
+}
+
 header address .location {
   font-size: 21px;
   margin-top: 10px;
 }
 
 header address .tel {
-  display: block;
+  position: absolute;
+  right: 0;
   font: 800 21px "Nunito", sans-serif;
   text-align: end;
 }
@@ -370,7 +375,8 @@ header address .tel {
 }
 
 .partners-wrapper h2 {
-  font: 700 21px "Nunito", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
   text-align: center;
   padding-block: 10px;
 }
@@ -431,6 +437,6 @@ footer address .phone-numbers a {
 }
 
 footer address .phone-numbers a:first-of-type {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }

@@ -23,6 +23,10 @@
   margin-block: 30px;
 }
 
+.news a p {
+  text-align: justify;
+}
+
 .news-section button {
   color: #fff;
   background-color: var(--primary-color);
