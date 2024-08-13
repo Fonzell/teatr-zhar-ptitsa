@@ -74,7 +74,7 @@ main form button {
 
 .accordion button > :first-child {
   width: 5px;
-  margin: 5px 10px;
+  margin: 5px 10px 5px 5px;
   border-radius: 10px;
   background-color: var(--primary-color);
 }
