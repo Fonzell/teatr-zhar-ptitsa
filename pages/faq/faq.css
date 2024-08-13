@@ -61,7 +61,7 @@ main form button {
 }
 
 .accordion:not(:last-child) {
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 
 .accordion button {
@@ -69,10 +69,13 @@ main form button {
   background-color: #f3f6fb;
   display: flex;
   align-items: stretch;
+  border-radius: 5px;
 }
 
 .accordion button > :first-child {
-  width: 20px;
+  width: 5px;
+  margin: 5px 10px;
+  border-radius: 10px;
   background-color: var(--primary-color);
 }
 
@@ -80,7 +83,7 @@ main form button {
   flex-grow: 1;
   font-weight: 800;
   text-align: start;
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 0px;
 }
 
 .accordion button > :last-child {
