@@ -28,6 +28,7 @@ main b {
 main a {
   text-decoration: underline;
   color: var(--accent-color);
+  font-weight: 700;
 }
 
 main :is(.rules, .ticket-buying-options) {

@@ -15,9 +15,9 @@ main p {
 
 main a {
   color: var(--primary-color);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 main b {
-  font-weight: 800;
+  font-weight: 700;
 }
