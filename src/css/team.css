@@ -1,0 +1,82 @@
+.team-nav {
+  margin-block: 60px 120px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-nav a,
+.team-nav-heading h2 {
+  display: inline-block;
+  font-size: 21px;
+  border: 1px solid #6a6a6a;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.managment {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.employee {
+  text-align: center;
+}
+
+.employee a {
+  display: inline-block;
+}
+
+.employee a,
+.employee a img {
+  border-radius: 50%;
+}
+
+.managment .employee .full-name,
+.creative-team .employee .full-name,
+.production .full-name {
+  margin-bottom: 15px;
+}
+
+.employee .full-name {
+  margin-top: 30px;
+  font: 700 21px "Nunito", sans-serif;
+}
+
+.team-nav-heading {
+  text-align: center;
+  background-image: linear-gradient(#6a6a6a, #6a6a6a);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-block: 70px;
+}
+
+.team-nav-heading h2 {
+  background-color: white;
+}
+
+.creative-team,
+.troupe,
+.production {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: space-between;
+}
+
+.troupe,
+.production {
+  row-gap: 70px;
+}
+
+.production {
+  margin-bottom: 120px;
+}
+
+.production .employee:nth-last-child(2) {
+  grid-column: 2 / 3;
+}
+
+.production .employee:nth-last-child(1) {
+  grid-column: 3 / 4;
+}

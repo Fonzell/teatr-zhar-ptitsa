@@ -1,0 +1,66 @@
+main {
+  padding-bottom: 300px;
+}
+
+.shows-filter {
+  margin-block: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.shows-filter a {
+  display: inline-block;
+  font-size: 21px;
+  border: 1px solid #6a6a6a;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.shows .show {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  padding-block: 30px;
+  border-bottom: 1px solid #828282;
+}
+
+.shows .show:first-child {
+  border-top: 1px solid #828282;
+}
+
+.shows .show .data {
+  flex-grow: 1;
+}
+
+.shows .show .data :is(.extra-info, .age) {
+  font: 900 21px "Nunito", sans-serif;
+}
+
+.shows .show .data h2 {
+  font-size: 27px;
+  margin-block: 5px;
+}
+
+.shows .show .data .author {
+  margin-bottom: 30px;
+}
+
+.shows .show .data:not(:has(.extra-info)) .author {
+  margin-bottom: 60px;
+}
+
+.shows .show a {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  display: block;
+  align-self: end;
+}
+
+.shows .show .data time {
+  position: absolute;
+  bottom: 30px;
+}

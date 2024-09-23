@@ -1,8 +1,19 @@
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".main-swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".main-next",
+    prevEl: ".main-prev",
+  },
+});
+
+var swiper = new Swiper(".upcoming-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".upcoming-next",
+    prevEl: ".upcoming-prev",
   },
 });

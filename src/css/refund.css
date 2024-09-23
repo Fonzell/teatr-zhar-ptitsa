@@ -1,0 +1,40 @@
+main {
+  margin-bottom: 50px;
+}
+
+main h1 {
+  font: 700 45px "Nunito", sans-serif;
+  margin-block: 50px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+main p {
+  margin-block: 10px;
+}
+
+main :is(ol, ul) {
+  list-style-position: inside;
+}
+
+main ol {
+  list-style-type: upper-roman;
+}
+
+main table {
+  width: 100%;
+}
+
+main table th {
+  font-weight: 800;
+  text-align: start;
+}
+
+main :is(table, th, td) {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+main table :is(th, td) {
+  padding: 10px;
+}

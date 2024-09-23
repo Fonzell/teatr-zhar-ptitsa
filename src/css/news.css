@@ -1,0 +1,38 @@
+.slider {
+  margin-block: 30px;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 80px;
+}
+
+.news a img {
+  width: 100%;
+  aspect-ratio: 16/11;
+}
+
+.news a h2 {
+  font: 800 21px "Nunito", sans-serif;
+  margin-block: 30px;
+}
+
+.news a p {
+  text-align: justify;
+}
+
+.news-section button {
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  margin-block: 50px 20px;
+  width: 100%;
+  padding-block: 10px;
+}

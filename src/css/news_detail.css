@@ -1,0 +1,36 @@
+main {
+  margin-bottom: 50px;
+}
+
+main .news-img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+main a:hover {
+  color: var(--primary-color);
+}
+
+main h1 {
+  font: 700 45px "Nunito", sans-serif;
+  text-align: center;
+  margin-block: 50px;
+}
+
+main p {
+  padding-block: 10px;
+  text-align: justify;
+}
+
+.all-news-link {
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 21px;
+  border: 1px solid #6a6a6a;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.galery_temp {
+  width: 100%;
+}

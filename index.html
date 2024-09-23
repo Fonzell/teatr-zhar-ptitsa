@@ -10,8 +10,8 @@
     />
     <title>Московский театр кукол "ЖАР-ПТИЦА" | Официальный сайт</title>
     <link rel="shortcut icon" href="src/icons/favicon.png" />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="src/css/global.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
     <link rel="stylesheet" href="src/swiper/swiper-bundle.min.css" />
     <script defer src="src/swiper/swiper-bundle.min.js"></script>
     <script defer src="src/swiper/swiper-config.js"></script>
@@ -137,12 +137,28 @@
     </header>
 
     <main>
-      <section class="main-show">
+      <section class="main-shows">
         <div class="width-limiter">
-          <img src="src/images/main_show.png" alt="Братец кролик против Братца Лиса" />
-          <h2>Братец кролик <br />против Братца Лисы</h2>
-          <a href="#">Подробднее</a>
-          <p>3+</p>
+          <div class="swiper main-swiper">
+            <div class="swiper-wrapper">
+              <div class="show swiper-slide">
+                <img src="src/images/main_show.png" alt="Братец кролик против Братца Лиса" />
+                <h2 class="swiper-no-swiping">Братец кролик <br />против Братца Лисы</h2>
+                <a href="#">Подробднее</a>
+                <p>3+</p>
+              </div>
+
+              <div class="show swiper-slide">
+                <img src="src/images/show_4.png" alt="Братец кролик против Братца Лиса" />
+                <h2 class="swiper-no-swiping">Братец кролик <br />против Братца Лисы</h2>
+                <a href="#">Подробднее</a>
+                <p>3+</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next main-next"></div>
+          <div class="swiper-button-prev main-prev"></div>
         </div>
       </section>
 
@@ -153,7 +169,7 @@
           </div>
 
           <div class="slider">
-            <div class="swiper">
+            <div class="swiper upcoming-swiper">
               <div class="upcoming-shows swiper-wrapper">
                 <div class="show swiper-slide">
                   <time class="swiper-no-swiping" datetime="2024-23-02"><span>23</span> февраля</time>
@@ -256,8 +272,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next upcoming-next"></div>
+            <div class="swiper-button-prev upcoming-prev"></div>
           </div>
         </section>
 
