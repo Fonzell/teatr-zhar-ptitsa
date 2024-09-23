@@ -23,13 +23,9 @@
   text-align: center;
 }
 
-.employee a {
-  display: inline-block;
-}
-
-.employee a,
-.employee a img {
+.employee img {
   border-radius: 50%;
+  display: inline-block;
 }
 
 .managment .employee .full-name,

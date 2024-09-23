@@ -51,7 +51,7 @@ main {
   margin-bottom: 60px;
 }
 
-.shows .show a {
+.shows .show a:last-child {
   color: #fff;
   padding: 10px 20px;
   background-color: var(--primary-color);

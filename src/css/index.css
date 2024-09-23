@@ -112,7 +112,7 @@ section .title h2 {
 }
 
 .upcoming-shows .show .data a,
-.poster-shows .show a {
+.poster-shows .show a:nth-last-child(2) {
   flex-shrink: 0;
   color: #fff;
   padding: 10px 20px;
@@ -236,6 +236,7 @@ section .title h2 {
 }
 
 .poster-shows .show h3 {
+  display: inline;
   font-size: 27px;
   font-weight: 800;
 }
