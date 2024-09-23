@@ -1,61 +1,500 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1060" />
-    <meta name="description" content='Коллектив Московского театра кукол "ЖАР-ПТИЦА"' />
-    <title>Коллектив | Московский театр кукол "ЖАР-ПТИЦА"</title>
-    <link rel="shortcut icon" href="../../src/icons/favicon.png" />
-    <link rel="stylesheet" href="../../src/css/global.css" />
-    <link rel="stylesheet" href="../../src/css/team.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-top">
-        <div class="width-limiter">
-          <a href="https://www.mos.ru/kultura/" class="department-wrapper">
-            <img src="../../src/images/department_logo.png" alt="Учреждение, подведомственное департаменту культуры города Москвы" />
-            <p>
-              Учреждение, подведомственное <br />
-              Департаменту культуры <br />
-              города Москвы
-            </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=1060" />
+  <meta name="description" content='Коллектив Московского театра кукол "ЖАР-ПТИЦА"' />
+  <title>Коллектив | Московский театр кукол "ЖАР-ПТИЦА"</title>
+  <link rel="shortcut icon" href="../../src/icons/favicon.png" />
+  <link rel="stylesheet" href="../../src/css/global.css" />
+  <link rel="stylesheet" href="../../src/css/team.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="width-limiter">
+        <a href="https://www.mos.ru/kultura/" class="department-wrapper">
+          <img src="../../src/images/department_logo.png" alt="Учреждение, подведомственное департаменту культуры города Москвы" />
+          <p>
+            Учреждение, подведомственное <br />
+            Департаменту культуры <br />
+            города Москвы
+          </p>
+        </a>
+
+        <form action="/search" method="get">
+          <input type="text" name="search" placeholder="Введите фразу для поиска" />
+          <button type="submit">
+            <img src="../../src/icons/search.png" alt="Поиск" />
+          </button>
+        </form>
+
+        <img class="cluture-img" src="../../src/images/npr_culture_left.png" alt="Культура, национальные проекты России" />
+
+        <div class="header-links">
+          <a href="?special_version=Y" target="_blank">
+            <img src="../../src/icons/vision.png" alt="Версия для слабовидящих" />
+            Версия для слабовидящих
           </a>
-
-          <form action="/search" method="get">
-            <input type="text" name="search" placeholder="Введите фразу для поиска" />
-            <button type="submit">
-              <img src="../../src/icons/search.png" alt="Поиск" />
-            </button>
-          </form>
-
-          <img class="cluture-img" src="../../src/images/npr_culture_left.png" alt="Культура, национальные проекты России" />
-
-          <div class="header-links">
-            <a href="?special_version=Y" target="_blank">
-              <img src="../../src/icons/vision.png" alt="Версия для слабовидящих" />
-              Версия для слабовидящих
-            </a>
-            <a href="https://organizations.kultura.mos.ru/organizations/gbuk_gmoskvy_moskovskii_teatr_zharptitsa.html" target="_blank">
-              <img src="../../src/icons/rate.png" alt="Оценить учреждение культуры" />
-              Оценить учреждение культуры
-            </a>
-            <a href="/faq" target="_blank">
-              <img src="../../src/icons/question.png" alt="Вопрос-ответ" />
-              Вопрос-ответ
-            </a>
-          </div>
+          <a href="https://organizations.kultura.mos.ru/organizations/gbuk_gmoskvy_moskovskii_teatr_zharptitsa.html" target="_blank">
+            <img src="../../src/icons/rate.png" alt="Оценить учреждение культуры" />
+            Оценить учреждение культуры
+          </a>
+          <a href="/faq" target="_blank">
+            <img src="../../src/icons/question.png" alt="Вопрос-ответ" />
+            Вопрос-ответ
+          </a>
         </div>
       </div>
+    </div>
 
-      <div class="header-middle">
-        <div class="width-limiter">
-          <a href="/" class="logo-wrapper">
-            <img src="../../src/images/main_logo.png" alt="ЖАР-ПТИЦА, театр кукол" />
-            <p>31-й театральный сезон</p>
-          </a>
-          <address>
+    <div class="header-middle">
+      <div class="width-limiter">
+        <a href="/" class="logo-wrapper">
+          <img src="../../src/images/main_logo.png" alt="ЖАР-ПТИЦА, театр кукол" />
+          <p>31-й театральный сезон</p>
+        </a>
+        <address>
+          <div class="media">
+            <a href="https://vk.com/t_kukol" target="_blank">
+              <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
+            </a>
+            <a href="https://www.ok.ru/group/55051763908621" target="_blank">
+              <img src="../../src/icons/media/ok.png" alt="Одноклассники" />
+            </a>
+            <a href="https://t.me/mtk_zhar_ptitsa" target="_blank">
+              <img src="../../src/icons/media/tg.png" alt="Телеграм" />
+            </a>
+            <a href="https://www.youtube.com/c/ТеатркуколжарптицаМосква" target="_blank">
+              <img src="../../src/icons/media/yt.png" alt="Ютуб" />
+            </a>
+          </div>
+          <p class="location">Москва, ул. Стромынка, д. 3</p>
+          <a class="tel" href="tel:+74997480040">8(499)748-00-40</a>
+        </address>
+      </div>
+    </div>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a href="/">ГЛАВНАЯ</a></li>
+        <li><a href="/repertoire/">АФИША</a></li>
+        <li class="dropdown">
+          <a href="/news/">НОВОСТИ</a>
+          <ul>
+            <li><a href="/news/">Новости театра</a></li>
+            <li><a href="/news/novosti-kultury/">Новости ДК</a></li>
+          </ul>
+        </li>
+        <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
+        <li class="dropdown">
+          <a href="/about/" class="selected">О ТЕАТРЕ</a>
+          <ul>
+            <li><a href="/about/">История театра</a></li>
+            <li>
+              <h1>
+                <a href="/team/" class="selected">Коллектив</a>
+              </h1>
+            </li>
+            <li><a href="/30years/">Театру 30 лет</a></li>
+            <li><a href="/quality">Документы</a></li>
+          </ul>
+        </li>
+        <li><a href="/contacts/">КОНТАКТЫ</a></li>
+        <li class="dropdown">
+          <a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a>
+          <ul>
+            <li><a href="/repertoire/regulation/">Правила и льготы</a></li>
+            <li><a href="/quality/refund/">Возврат билетов</a></li>
+            <li><a href="/quality/evaluation/">Независимая оценка</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="width-limiter">
+    <div class="team-nav" id="managment">
+      <a href="#managment">Руководство</a>
+      <a href="#creative-team">Творческая часть</a>
+      <a href="#troupe">Труппа</a>
+      <a href="#production">Постановочная часть</a>
+    </div>
+
+    <div class="managment">
+      <div class="employee">
+        <a href="/team/rukovodstvo/nerush-lyudmila-viktorovna/">
+          <img src="../../src/images/team/managment/employee_1.png" alt="Неруш Людмила Викторовна" />
+        </a>
+        <p class="full-name">
+          Неруш <br />
+          Людмила Викторовна
+        </p>
+        <p>Заслуженный работник культуры РФ</p>
+        <p>Директор театра</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/rukovodstvo/remenyak-olga-revoldovna/">
+          <img src="../../src/images/team/managment/employee_2.png" alt="Ременяк Ольга Револьдовна" />
+        </a>
+        <p class="full-name">
+          Ременяк <br />
+          Ольга Револьдовна
+        </p>
+        <p>Заместитель директора</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/rukovodstvo/durmishevich-olga-viktorovna/">
+          <img src="../../src/images/team/managment/employee_3.png" alt="Дурмишевич Ольга Викторовна" />
+        </a>
+        <p class="full-name">
+          Дурмишевич <br />
+          Ольга Викторовна
+        </p>
+        <p>
+          Заместитель директора <br />
+          по организации зрителя
+        </p>
+      </div>
+    </div>
+
+    <div class="team-nav-heading" id="creative-team">
+      <h2>Творческая часть</h2>
+    </div>
+
+    <div class="creative-team">
+      <div class="employee">
+        <a href="/team/tvorcheskaya-chast/rusov-oleg-mikhaylovich/">
+          <img src="../../src/images/team/creavtive-team/employee_1.png" alt="Русов Олег Михайлович" />
+        </a>
+        <p class="full-name">
+          Русов <br />
+          Олег Михайлович
+        </p>
+        <p>Режисер-постановщик</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/tvorcheskaya-chast/sergey-vyacheslavovich-klevakin/">
+          <img src="../../src/images/team/creavtive-team/employee_2.png" alt="Клевакин Сергей Вячеславович" />
+        </a>
+        <p class="full-name">
+          Клевакин <br />
+          Сергей Вячеславович
+        </p>
+        <p>Главный художник театра</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/tvorcheskaya-chast/tatyana-savinykh/">
+          <img src="../../src/images/team/creavtive-team/employee_3.png" alt="Савиных Татьяна Михайловна" />
+        </a>
+        <p class="full-name">
+          Савиных <br />
+          Татьяна Михайловна
+        </p>
+        <p>Заведующая труппой театра</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/tvorcheskaya-chast/nadezhda-solodovnikova/">
+          <img src="../../src/images/team/creavtive-team/employee_4.png" alt="Солодовникова Надежда Борисовна" />
+        </a>
+        <p class="full-name">
+          Солодовникова <br />
+          Надежда Борисовна
+        </p>
+        <p>Заведующая музыкальной частью</p>
+      </div>
+    </div>
+
+    <div class="team-nav-heading" id="troupe">
+      <h2>Труппа</h2>
+    </div>
+
+    <div class="troupe">
+      <div class="employee">
+        <a href="/team/truppa/olga-shcherbovich-vecher/">
+          <img src="../../src/images/team/troupe/employee_1.png" alt="Щербович-Вечер Ольга" />
+        </a>
+        <p class="full-name">
+          Щербович-Вечер <br />
+          Ольга
+        </p>
+        <p>Заслуженная артистка РФ – 2007г</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/valeriya-firsakova/">
+          <img src="../../src/images/team/troupe/employee_2.png" alt="Фирсакова Валерия" />
+        </a>
+        <p class="full-name">
+          Фирсакова <br />
+          Валерия
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/vlad-golovin/">
+          <img src="../../src/images/team/troupe/employee_3.png" alt="Головин Владислав" />
+        </a>
+        <p class="full-name">
+          Головин <br />
+          Владислав
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/konstantin-mamin/">
+          <img src="../../src/images/team/troupe/employee_4.png" alt="Мамин Константин" />
+        </a>
+        <p class="full-name">
+          Мамин <br />
+          Константин
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/ivan-tretyakov/">
+          <img src="../../src/images/team/troupe/employee_5.png" alt="Третьяков Иван" />
+        </a>
+        <p class="full-name">
+          Третьяков <br />
+          Иван
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/anna-osadchaya/">
+          <img src="../../src/images/team/troupe/employee_6.png" alt="Осадчая Анна" />
+        </a>
+        <p class="full-name">
+          Осадчая <br />
+          Анна
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/tagir-mangutkin/">
+          <img src="../../src/images/team/troupe/employee_7.png" alt="Мантуткин Тагир" />
+        </a>
+        <p class="full-name">
+          Мантуткин <br />
+          Тагир
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/evgeniy-ryzhkov/">
+          <img src="../../src/images/team/troupe/employee_8.png" alt="Рыжков Евгений" />
+        </a>
+        <p class="full-name">
+          Рыжков <br />
+          Евгений
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/darya-panteleeva/">
+          <img src="../../src/images/team/troupe/employee_9.png" alt="Пантелеева Дарья" />
+        </a>
+        <p class="full-name">
+          Пантелеева <br />
+          Дарья
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/tatyana-lopatina/">
+          <img src="../../src/images/team/troupe/employee_10.png" alt="Лопатина Татьяна" />
+        </a>
+        <p class="full-name">
+          Лопатина <br />
+          Татьяна
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/galina-lomakina/">
+          <img src="../../src/images/team/troupe/employee_11.png" alt="Ломакина Галина" />
+        </a>
+        <p class="full-name">
+          Ломакина <br />
+          Галина
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/svetlana-kuznetsova/">
+          <img src="../../src/images/team/troupe/employee_12.png" alt="Кузнецова Светлана" />
+        </a>
+        <p class="full-name">
+          Кузнецова <br />
+          Светлана
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/marina-kravchenko/">
+          <img src="../../src/images/team/troupe/employee_13.png" alt="Кравченко Марина" />
+        </a>
+        <p class="full-name">
+          Кравченко<br />
+          Марина
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/boris-domnin/">
+          <img src="../../src/images/team/troupe/employee_14.png" alt="Домнин Борис" />
+        </a>
+        <p class="full-name">
+          Домнин <br />
+          Борис
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/irina-dmitrieva/">
+          <img src="../../src/images/team/troupe/employee_15.png" alt="Дмитриева Ирина" />
+        </a>
+        <p class="full-name">
+          Дмитриева <br />
+          Ирина
+        </p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/truppa/andrey-balyakin/">
+          <img src="../../src/images/team/troupe/employee_16.png" alt="Балякин Андрей" />
+        </a>
+        <p class="full-name">
+          Балякин <br />
+          Андрей
+        </p>
+      </div>
+    </div>
+
+    <div class="team-nav-heading" id="production">
+      <h2>Постановочная часть</h2>
+    </div>
+
+    <div class="production">
+      <div class="employee">
+        <a href="/team/postanovochnaya-chast/akif-ibragimov/">
+          <img src="../../src/images/team/production/employee_1.png" alt="Ибрагимов Акиф Абозар Оглы" />
+        </a>
+        <p class="full-name">
+          Ибрагимов<br />
+          Акиф Абозар Оглы
+        </p>
+        <p>Зав. машинно-декорационным цехом</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/postanovochnaya-chast/romanchuk-aleksey-yurevich/">
+          <img src="../../src/images/team/production/employee_2.png" alt="Романчук Алексей Юрьевич" />
+        </a>
+        <p class="full-name">
+          Романчук<br />
+          Алексей Юрьевич
+        </p>
+        <p>Художник-декоратор</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/postanovochnaya-chast/andronik-marta-borisovna/">
+          <img src="../../src/images/team/production/employee_3.png" alt="Андроник Марта Борисовна" />
+        </a>
+        <p class="full-name">
+          Андроник<br />
+          Марта Борисовна
+        </p>
+        <p>Зав. костюмерным цехом</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/postanovochnaya-chast/polina-ivanova/">
+          <img src="../../src/images/team/production/employee_4.png" alt="Иванова Полина Алексеевна" />
+        </a>
+        <p class="full-name">
+          Иванова<br />
+          Полина Алексеевна
+        </p>
+        <p>Зав. реквизиторским цехом</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/postanovochnaya-chast/igor-anufriev/">
+          <img src="../../src/images/team/production/employee_5.png" alt="Ануфриев Игорь Альбертович" />
+        </a>
+        <p class="full-name">
+          Ануфриев<br />
+          Игорь Альбертович
+        </p>
+        <p>Зав. электроосветительным цехом</p>
+      </div>
+
+      <div class="employee">
+        <a href="/team/postanovochnaya-chast/belyakov-petr-pavlovich/">
+          <img src="../../src/images/team/production/employee_6.png" alt="Беляков Петр Павлович" />
+        </a>
+        <p class="full-name">
+          Беляков<br />
+          Петр Павлович
+        </p>
+        <p>Зав. звуковым цехом</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="partners-wrapper">
+      <h2>Информационные партнеры</h2>
+      <a class="culture-link" href="http://www.culture.ru"> CULTURE.<span>RU</span> </a>
+      <div class="partners">
+        <a href="https://afisha.yandex.ru/moscow/theatre/places/teatr-kukol-zhar-ptitsa" target="_blank">
+          <img src="../../src/images/partners/yandex.png" />
+        </a>
+        <a target="_blank" href="http://ag.mos.ru/">
+          <img src="../../src/images/partners/ag.png" />
+        </a>
+        <a href="http://www.osd.ru/objinf.asp?ob=29" target="_blank">
+          <img src="../../src/images/partners/logo_osd_color.png" />
+        </a>
+        <a target="_blank" href="http://hrculturemos.ru/bank/">
+          <img src="../../src/images/partners/bank-vakansij.png" />
+        </a>
+        <a href="http://www.vao-mos.info" target="_blank">
+          <img src="../../src/images/partners/vostokrug.png" />
+        </a>
+        <a href="https://intickets.ru/" target="_blank">
+          <img src="../../src/images/partners/intickets.png" />
+        </a>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="width-limiter">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="/">ГЛАВНАЯ</a></li>
+            <li><a href="/repertoire/">АФИША</a></li>
+            <li><a href="/news/">НОВОСТИ</a></li>
+            <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
+            <li><a href="/about/" class="selected">О ТЕАТРЕ</a></li>
+            <li><a href="/contacts/">КОНТАКТЫ</a></li>
+            <li><a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a></li>
+          </ul>
+        </div>
+
+        <address>
+          <div>
             <div class="media">
               <a href="https://vk.com/t_kukol" target="_blank">
                 <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
@@ -70,458 +509,22 @@
                 <img src="../../src/icons/media/yt.png" alt="Ютуб" />
               </a>
             </div>
-            <p class="location">Москва, ул. Стромынка, д. 3</p>
-            <a class="tel" href="tel:+74997480040">8(499)748-00-40</a>
-          </address>
-        </div>
-      </div>
-
-      <nav class="header-nav">
-        <ul>
-          <li><a href="/">ГЛАВНАЯ</a></li>
-          <li><a href="/repertoire/">АФИША</a></li>
-          <li class="dropdown">
-            <a href="/news/">НОВОСТИ</a>
-            <ul>
-              <li><a href="/news/">Новости театра</a></li>
-              <li><a href="/news/novosti-kultury/">Новости ДК</a></li>
-            </ul>
-          </li>
-          <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
-          <li class="dropdown">
-            <a href="/about/" class="selected">О ТЕАТРЕ</a>
-            <ul>
-              <li><a href="/about/">История театра</a></li>
-              <li>
-                <h1>
-                  <a href="/team/" class="selected">Коллектив</a>
-                </h1>
-              </li>
-              <li><a href="/30years/">Театру 30 лет</a></li>
-              <li><a href="/quality">Документы</a></li>
-            </ul>
-          </li>
-          <li><a href="/contacts/">КОНТАКТЫ</a></li>
-          <li class="dropdown">
-            <a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a>
-            <ul>
-              <li><a href="/repertoire/regulation/">Правила и льготы</a></li>
-              <li><a href="/quality/refund/">Возврат билетов</a></li>
-              <li><a href="/quality/evaluation/">Независимая оценка</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="width-limiter">
-      <div class="team-nav" id="managment">
-        <a href="#managment">Руководство</a>
-        <a href="#creative-team">Творческая часть</a>
-        <a href="#troupe">Труппа</a>
-        <a href="#production">Постановочная часть</a>
-      </div>
-
-      <div class="managment">
-        <div class="employee">
-          <a href="/team/rukovodstvo/nerush-lyudmila-viktorovna/">
-            <img src="../../src/images/team/managment/employee_1.png" alt="Неруш Людмила Викторовна" />
-          </a>
-          <p class="full-name">
-            Неруш <br />
-            Людмила Викторовна
-          </p>
-          <p>Заслуженный работник культуры РФ</p>
-          <p>Директор театра</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/rukovodstvo/remenyak-olga-revoldovna/">
-            <img src="../../src/images/team/managment/employee_2.png" alt="Ременяк Ольга Револьдовна" />
-          </a>
-          <p class="full-name">
-            Ременяк <br />
-            Ольга Револьдовна
-          </p>
-          <p>Заместитель директора</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/rukovodstvo/durmishevich-olga-viktorovna/">
-            <img src="../../src/images/team/managment/employee_3.png" alt="Дурмишевич Ольга Викторовна" />
-          </a>
-          <p class="full-name">
-            Дурмишевич <br />
-            Ольга Викторовна
-          </p>
-          <p>
-            Заместитель директора <br />
-            по организации зрителя
-          </p>
-        </div>
-      </div>
-
-      <div class="team-nav-heading" id="creative-team">
-        <h2>Творческая часть</h2>
-      </div>
-
-      <div class="creative-team">
-        <div class="employee">
-          <a href="/team/tvorcheskaya-chast/rusov-oleg-mikhaylovich/">
-            <img src="../../src/images/team/creavtive-team/employee_1.png" alt="Русов Олег Михайлович" />
-          </a>
-          <p class="full-name">
-            Русов <br />
-            Олег Михайлович
-          </p>
-          <p>Режисер-постановщик</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/tvorcheskaya-chast/sergey-vyacheslavovich-klevakin/">
-            <img src="../../src/images/team/creavtive-team/employee_2.png" alt="Клевакин Сергей Вячеславович" />
-          </a>
-          <p class="full-name">
-            Клевакин <br />
-            Сергей Вячеславович
-          </p>
-          <p>Главный художник театра</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/tvorcheskaya-chast/tatyana-savinykh/">
-            <img src="../../src/images/team/creavtive-team/employee_3.png" alt="Савиных Татьяна Михайловна" />
-          </a>
-          <p class="full-name">
-            Савиных <br />
-            Татьяна Михайловна
-          </p>
-          <p>Заведующая труппой театра</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/tvorcheskaya-chast/nadezhda-solodovnikova/">
-            <img src="../../src/images/team/creavtive-team/employee_4.png" alt="Солодовникова Надежда Борисовна" />
-          </a>
-          <p class="full-name">
-            Солодовникова <br />
-            Надежда Борисовна
-          </p>
-          <p>Заведующая музыкальной частью</p>
-        </div>
-      </div>
-
-      <div class="team-nav-heading" id="troupe">
-        <h2>Труппа</h2>
-      </div>
-
-      <div class="troupe">
-        <div class="employee">
-          <a href="/team/truppa/olga-shcherbovich-vecher/">
-            <img src="../../src/images/team/troupe/employee_1.png" alt="Щербович-Вечер Ольга" />
-          </a>
-          <p class="full-name">
-            Щербович-Вечер <br />
-            Ольга
-          </p>
-          <p>Заслуженная артистка РФ – 2007г</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/valeriya-firsakova/">
-            <img src="../../src/images/team/troupe/employee_2.png" alt="Фирсакова Валерия" />
-          </a>
-          <p class="full-name">
-            Фирсакова <br />
-            Валерия
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/vlad-golovin/">
-            <img src="../../src/images/team/troupe/employee_3.png" alt="Головин Владислав" />
-          </a>
-          <p class="full-name">
-            Головин <br />
-            Владислав
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/konstantin-mamin/">
-            <img src="../../src/images/team/troupe/employee_4.png" alt="Мамин Константин" />
-          </a>
-          <p class="full-name">
-            Мамин <br />
-            Константин
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/ivan-tretyakov/">
-            <img src="../../src/images/team/troupe/employee_5.png" alt="Третьяков Иван" />
-          </a>
-          <p class="full-name">
-            Третьяков <br />
-            Иван
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/anna-osadchaya/">
-            <img src="../../src/images/team/troupe/employee_6.png" alt="Осадчая Анна" />
-          </a>
-          <p class="full-name">
-            Осадчая <br />
-            Анна
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/tagir-mangutkin/">
-            <img src="../../src/images/team/troupe/employee_7.png" alt="Мантуткин Тагир" />
-          </a>
-          <p class="full-name">
-            Мантуткин <br />
-            Тагир
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/evgeniy-ryzhkov/">
-            <img src="../../src/images/team/troupe/employee_8.png" alt="Рыжков Евгений" />
-          </a>
-          <p class="full-name">
-            Рыжков <br />
-            Евгений
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/darya-panteleeva/">
-            <img src="../../src/images/team/troupe/employee_9.png" alt="Пантелеева Дарья" />
-          </a>
-          <p class="full-name">
-            Пантелеева <br />
-            Дарья
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/tatyana-lopatina/">
-            <img src="../../src/images/team/troupe/employee_10.png" alt="Лопатина Татьяна" />
-          </a>
-          <p class="full-name">
-            Лопатина <br />
-            Татьяна
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/galina-lomakina/">
-            <img src="../../src/images/team/troupe/employee_11.png" alt="Ломакина Галина" />
-          </a>
-          <p class="full-name">
-            Ломакина <br />
-            Галина
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/svetlana-kuznetsova/">
-            <img src="../../src/images/team/troupe/employee_12.png" alt="Кузнецова Светлана" />
-          </a>
-          <p class="full-name">
-            Кузнецова <br />
-            Светлана
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/marina-kravchenko/">
-            <img src="../../src/images/team/troupe/employee_13.png" alt="Кравченко Марина" />
-          </a>
-          <p class="full-name">
-            Кравченко<br />
-            Марина
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/boris-domnin/">
-            <img src="../../src/images/team/troupe/employee_14.png" alt="Домнин Борис" />
-          </a>
-          <p class="full-name">
-            Домнин <br />
-            Борис
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/irina-dmitrieva/">
-            <img src="../../src/images/team/troupe/employee_15.png" alt="Дмитриева Ирина" />
-          </a>
-          <p class="full-name">
-            Дмитриева <br />
-            Ирина
-          </p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/truppa/andrey-balyakin/">
-            <img src="../../src/images/team/troupe/employee_16.png" alt="Балякин Андрей" />
-          </a>
-          <p class="full-name">
-            Балякин <br />
-            Андрей
-          </p>
-        </div>
-      </div>
-
-      <div class="team-nav-heading" id="production">
-        <h2>Постановочная часть</h2>
-      </div>
-
-      <div class="production">
-        <div class="employee">
-          <a href="/team/postanovochnaya-chast/akif-ibragimov/">
-            <img src="../../src/images/team/production/employee_1.png" alt="Ибрагимов Акиф Абозар Оглы" />
-          </a>
-          <p class="full-name">
-            Ибрагимов<br />
-            Акиф Абозар Оглы
-          </p>
-          <p>Зав. машинно-декорационным цехом</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/postanovochnaya-chast/romanchuk-aleksey-yurevich/">
-            <img src="../../src/images/team/production/employee_2.png" alt="Романчук Алексей Юрьевич" />
-          </a>
-          <p class="full-name">
-            Романчук<br />
-            Алексей Юрьевич
-          </p>
-          <p>Художник-декоратор</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/postanovochnaya-chast/andronik-marta-borisovna/">
-            <img src="../../src/images/team/production/employee_3.png" alt="Андроник Марта Борисовна" />
-          </a>
-          <p class="full-name">
-            Андроник<br />
-            Марта Борисовна
-          </p>
-          <p>Зав. костюмерным цехом</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/postanovochnaya-chast/polina-ivanova/">
-            <img src="../../src/images/team/production/employee_4.png" alt="Иванова Полина Алексеевна" />
-          </a>
-          <p class="full-name">
-            Иванова<br />
-            Полина Алексеевна
-          </p>
-          <p>Зав. реквизиторским цехом</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/postanovochnaya-chast/igor-anufriev/">
-            <img src="../../src/images/team/production/employee_5.png" alt="Ануфриев Игорь Альбертович" />
-          </a>
-          <p class="full-name">
-            Ануфриев<br />
-            Игорь Альбертович
-          </p>
-          <p>Зав. электроосветительным цехом</p>
-        </div>
-
-        <div class="employee">
-          <a href="/team/postanovochnaya-chast/belyakov-petr-pavlovich/">
-            <img src="../../src/images/team/production/employee_6.png" alt="Беляков Петр Павлович" />
-          </a>
-          <p class="full-name">
-            Беляков<br />
-            Петр Павлович
-          </p>
-          <p>Зав. звуковым цехом</p>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="partners-wrapper">
-        <h2>Информационные партнеры</h2>
-        <a class="culture-link" href="http://www.culture.ru"> CULTURE.<span>RU</span> </a>
-        <div class="partners">
-          <a href="https://afisha.yandex.ru/moscow/theatre/places/teatr-kukol-zhar-ptitsa" target="_blank">
-            <img src="../../src/images/partners/yandex.png" />
-          </a>
-          <a target="_blank" href="http://ag.mos.ru/">
-            <img src="../../src/images/partners/ag.png" />
-          </a>
-          <a href="http://www.osd.ru/objinf.asp?ob=29" target="_blank">
-            <img src="../../src/images/partners/logo_osd_color.png" />
-          </a>
-          <a target="_blank" href="http://hrculturemos.ru/bank/">
-            <img src="../../src/images/partners/bank-vakansij.png" />
-          </a>
-          <a href="http://www.vao-mos.info" target="_blank">
-            <img src="../../src/images/partners/vostokrug.png" />
-          </a>
-          <a href="https://intickets.ru/" target="_blank">
-            <img src="../../src/images/partners/intickets.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="contacts">
-        <div class="width-limiter">
-          <div class="footer-nav">
-            <ul>
-              <li><a href="/">ГЛАВНАЯ</a></li>
-              <li><a href="/repertoire/">АФИША</a></li>
-              <li><a href="/news/">НОВОСТИ</a></li>
-              <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
-              <li><a href="/about/" class="selected">О ТЕАТРЕ</a></li>
-              <li><a href="/contacts/">КОНТАКТЫ</a></li>
-              <li><a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a></li>
-            </ul>
+            <p class="location">
+              107014 <br />Москва, ул. Стромынка, д. 3 <br />
+              м. Сокольники
+            </p>
           </div>
 
-          <address>
-            <div>
-              <div class="media">
-                <a href="https://vk.com/t_kukol" target="_blank">
-                  <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
-                </a>
-                <a href="https://www.ok.ru/group/55051763908621" target="_blank">
-                  <img src="../../src/icons/media/ok.png" alt="Одноклассники" />
-                </a>
-                <a href="https://t.me/mtk_zhar_ptitsa" target="_blank">
-                  <img src="../../src/icons/media/tg.png" alt="Телеграм" />
-                </a>
-                <a href="https://www.youtube.com/c/ТеатркуколжарптицаМосква" target="_blank">
-                  <img src="../../src/icons/media/yt.png" alt="Ютуб" />
-                </a>
-              </div>
-              <p class="location">
-                107014 <br />Москва, ул. Стромынка, д. 3 <br />
-                м. Сокольники
-              </p>
-            </div>
-
-            <div class="phone-numbers">
-              <p>Заказ билетов по телефону:</p>
-              <a href="tel:+74997480040">8(499)748-00-40</a>
-              <p>Телефон для справок:</p>
-              <a href="tel:+74997480038">8(499)748-00-38</a>
-            </div>
-          </address>
-        </div>
+          <div class="phone-numbers">
+            <p>Заказ билетов по телефону:</p>
+            <a href="tel:+74997480040">8(499)748-00-40</a>
+            <p>Телефон для справок:</p>
+            <a href="tel:+74997480038">8(499)748-00-38</a>
+          </div>
+        </address>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

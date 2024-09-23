@@ -1,61 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1060" />
-    <meta name="description" content="Новости Московского театра кукол ЖАР-ПТИЦА" />
-    <title>Новости | Московский театр кукол "ЖАР-ПТИЦА"</title>
-    <link rel="shortcut icon" href="../../src/icons/favicon.png" />
-    <link rel="stylesheet" href="../../src/css/global.css" />
-    <link rel="stylesheet" href="../../src/css/news_detail.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-top">
-        <div class="width-limiter">
-          <a href="https://www.mos.ru/kultura/" class="department-wrapper">
-            <img src="../../src/images/department_logo.png" alt="Учреждение, подведомственное департаменту культуры города Москвы" />
-            <p>
-              Учреждение, подведомственное <br />
-              Департаменту культуры <br />
-              города Москвы
-            </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=1060" />
+  <meta name="description" content="Новости Московского театра кукол ЖАР-ПТИЦА" />
+  <title>Новости | Московский театр кукол "ЖАР-ПТИЦА"</title>
+  <link rel="shortcut icon" href="../../src/icons/favicon.png" />
+  <link rel="stylesheet" href="../../src/css/global.css" />
+  <link rel="stylesheet" href="../../src/css/news_detail.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="width-limiter">
+        <a href="https://www.mos.ru/kultura/" class="department-wrapper">
+          <img src="../../src/images/department_logo.png" alt="Учреждение, подведомственное департаменту культуры города Москвы" />
+          <p>
+            Учреждение, подведомственное <br />
+            Департаменту культуры <br />
+            города Москвы
+          </p>
+        </a>
+
+        <form action="/search" method="get">
+          <input type="text" name="search" placeholder="Введите фразу для поиска" />
+          <button type="submit">
+            <img src="../../src/icons/search.png" alt="Поиск" />
+          </button>
+        </form>
+
+        <img class="cluture-img" src="../../src/images/npr_culture_left.png" alt="Культура, национальные проекты России" />
+
+        <div class="header-links">
+          <a href="?special_version=Y" target="_blank">
+            <img src="../../src/icons/vision.png" alt="Версия для слабовидящих" />
+            Версия для слабовидящих
           </a>
-
-          <form action="/search" method="get">
-            <input type="text" name="search" placeholder="Введите фразу для поиска" />
-            <button type="submit">
-              <img src="../../src/icons/search.png" alt="Поиск" />
-            </button>
-          </form>
-
-          <img class="cluture-img" src="../../src/images/npr_culture_left.png" alt="Культура, национальные проекты России" />
-
-          <div class="header-links">
-            <a href="?special_version=Y" target="_blank">
-              <img src="../../src/icons/vision.png" alt="Версия для слабовидящих" />
-              Версия для слабовидящих
-            </a>
-            <a href="https://organizations.kultura.mos.ru/organizations/gbuk_gmoskvy_moskovskii_teatr_zharptitsa.html" target="_blank">
-              <img src="../../src/icons/rate.png" alt="Оценить учреждение культуры" />
-              Оценить учреждение культуры
-            </a>
-            <a href="/faq" target="_blank">
-              <img src="../../src/icons/question.png" alt="Вопрос-ответ" />
-              Вопрос-ответ
-            </a>
-          </div>
+          <a href="https://organizations.kultura.mos.ru/organizations/gbuk_gmoskvy_moskovskii_teatr_zharptitsa.html" target="_blank">
+            <img src="../../src/icons/rate.png" alt="Оценить учреждение культуры" />
+            Оценить учреждение культуры
+          </a>
+          <a href="/faq" target="_blank">
+            <img src="../../src/icons/question.png" alt="Вопрос-ответ" />
+            Вопрос-ответ
+          </a>
         </div>
       </div>
+    </div>
 
-      <div class="header-middle">
-        <div class="width-limiter">
-          <a href="/" class="logo-wrapper">
-            <img src="../../src/images/main_logo.png" alt="ЖАР-ПТИЦА, театр кукол" />
-            <p>31-й театральный сезон</p>
-          </a>
-          <address>
+    <div class="header-middle">
+      <div class="width-limiter">
+        <a href="/" class="logo-wrapper">
+          <img src="../../src/images/main_logo.png" alt="ЖАР-ПТИЦА, театр кукол" />
+          <p>31-й театральный сезон</p>
+        </a>
+        <address>
+          <div class="media">
+            <a href="https://vk.com/t_kukol" target="_blank">
+              <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
+            </a>
+            <a href="https://www.ok.ru/group/55051763908621" target="_blank">
+              <img src="../../src/icons/media/ok.png" alt="Одноклассники" />
+            </a>
+            <a href="https://t.me/mtk_zhar_ptitsa" target="_blank">
+              <img src="../../src/icons/media/tg.png" alt="Телеграм" />
+            </a>
+            <a href="https://www.youtube.com/c/ТеатркуколжарптицаМосква" target="_blank">
+              <img src="../../src/icons/media/yt.png" alt="Ютуб" />
+            </a>
+          </div>
+          <p class="location">Москва, ул. Стромынка, д. 3</p>
+          <a class="tel" href="tel:+74997480040">8(499)748-00-40</a>
+        </address>
+      </div>
+    </div>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a href="/">ГЛАВНАЯ</a></li>
+        <li><a href="/repertoire/">АФИША</a></li>
+        <li class="dropdown">
+          <a href="/news/" class="selected">НОВОСТИ</a>
+          <ul>
+            <li><a href="/news/" class="selected">Новости театра</a></li>
+            <li><a href="/news/novosti-kultury/">Новости ДК</a></li>
+          </ul>
+        </li>
+        <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
+        <li class="dropdown">
+          <a href="/about/">О ТЕАТРЕ</a>
+          <ul>
+            <li><a href="/about/">История театра</a></li>
+            <li><a href="/team/">Коллектив</a></li>
+            <li><a href="/30years/">Театру 30 лет</a></li>
+            <li><a href="/quality">Документы</a></li>
+          </ul>
+        </li>
+        <li><a href="/contacts/">КОНТАКТЫ</a></li>
+        <li class="dropdown">
+          <a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a>
+          <ul>
+            <li><a href="/repertoire/regulation/">Правила и льготы</a></li>
+            <li><a href="/quality/refund/">Возврат билетов</a></li>
+            <li><a href="/quality/evaluation/">Независимая оценка</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="width-limiter">
+    <h1>Театральный бульвар 2024</h1>
+
+    <img class="news-img" src="../../src/images/news_detail_temp.jpg" alt="" />
+
+    <p>
+      С 15 июля на семи площадках Бульварного кольца под открытым небом проходит грандиозный фестиваль «Театральный бульвар». 21 июля наш театр стал
+      его гостем.
+    </p>
+    <p>Артисты "Жар-птицы" выступили на Чистопрудном бульваре с мастер-классом "Путешествие в страну Кукляндию".</p>
+    <p>
+      Главные герои этой истории - Пульчинелла, Пьеретта и Пьеро - стали проводниками в волшебную страну. Они рассказали ребятам и их родителям о
+      возникновении народного театра кукол, о героях уличных представлений разных народов мира, и, конечно, в их руках постоянно оживали персонажи
+      из спектаклей театра.
+    </p>
+    <p>Все было замечательно! Мы очень рады стать частью Фестиваля! Мы благодарим каждого, кто, несмотря на летний дождь, был с нами!</p>
+    <p>
+      «Театральный бульвар» проводится в рамках масштабного фестиваля «Лето в Москве. Все на улицу!». Он объединяет легендарные театры, знаменитые
+      вузы и студии. Москвичи и гости столицы становятся не только зрителями, но и участниками грандиозного события, которое продлится до 11
+      августа.
+    </p>
+    <p>Следите за программой на сайте <a href="https://teatr.mos.ru/#teatre">https://teatr.mos.ru/#teatre</a></p>
+
+    <img class="galery_temp" src="../../src/images/galery_temp.png" alt="" />
+
+    <a href="/news/" class="all-news-link">Читать другие новости театра</a>
+  </main>
+
+  <footer>
+    <div class="partners-wrapper">
+      <h2>Информационные партнеры</h2>
+      <a class="culture-link" href="http://www.culture.ru"> CULTURE.<span>RU</span> </a>
+      <div class="partners">
+        <a href="https://afisha.yandex.ru/moscow/theatre/places/teatr-kukol-zhar-ptitsa" target="_blank">
+          <img src="../../src/images/partners/yandex.png" />
+        </a>
+        <a target="_blank" href="http://ag.mos.ru/">
+          <img src="../../src/images/partners/ag.png" />
+        </a>
+        <a href="http://www.osd.ru/objinf.asp?ob=29" target="_blank">
+          <img src="../../src/images/partners/logo_osd_color.png" />
+        </a>
+        <a target="_blank" href="http://hrculturemos.ru/bank/">
+          <img src="../../src/images/partners/bank-vakansij.png" />
+        </a>
+        <a href="http://www.vao-mos.info" target="_blank">
+          <img src="../../src/images/partners/vostokrug.png" />
+        </a>
+        <a href="https://intickets.ru/" target="_blank">
+          <img src="../../src/images/partners/intickets.png" />
+        </a>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="width-limiter">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="/">ГЛАВНАЯ</a></li>
+            <li><a href="/repertoire/">АФИША</a></li>
+            <li><a href="/news/" class="selected">НОВОСТИ</a></li>
+            <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
+            <li><a href="/about/">О ТЕАТРЕ</a></li>
+            <li><a href="/contacts/">КОНТАКТЫ</a></li>
+            <li><a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a></li>
+          </ul>
+        </div>
+
+        <address>
+          <div>
             <div class="media">
               <a href="https://vk.com/t_kukol" target="_blank">
                 <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
@@ -70,145 +196,22 @@
                 <img src="../../src/icons/media/yt.png" alt="Ютуб" />
               </a>
             </div>
-            <p class="location">Москва, ул. Стромынка, д. 3</p>
-            <a class="tel" href="tel:+74997480040">8(499)748-00-40</a>
-          </address>
-        </div>
-      </div>
-
-      <nav class="header-nav">
-        <ul>
-          <li><a href="/">ГЛАВНАЯ</a></li>
-          <li><a href="/repertoire/">АФИША</a></li>
-          <li class="dropdown">
-            <a href="/news/" class="selected">НОВОСТИ</a>
-            <ul>
-              <li><a href="/news/" class="selected">Новости театра</a></li>
-              <li><a href="/news/novosti-kultury/">Новости ДК</a></li>
-            </ul>
-          </li>
-          <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
-          <li class="dropdown">
-            <a href="/about/">О ТЕАТРЕ</a>
-            <ul>
-              <li><a href="/about/">История театра</a></li>
-              <li><a href="/team/">Коллектив</a></li>
-              <li><a href="/30years/">Театру 30 лет</a></li>
-              <li><a href="/quality">Документы</a></li>
-            </ul>
-          </li>
-          <li><a href="/contacts/">КОНТАКТЫ</a></li>
-          <li class="dropdown">
-            <a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a>
-            <ul>
-              <li><a href="/repertoire/regulation/">Правила и льготы</a></li>
-              <li><a href="/quality/refund/">Возврат билетов</a></li>
-              <li><a href="/quality/evaluation/">Независимая оценка</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="width-limiter">
-      <h1>Театральный бульвар 2024</h1>
-
-      <img class="news-img" src="../../src/images/news_detail_temp.jpg" alt="" />
-
-      <p>
-        С 15 июля на семи площадках Бульварного кольца под открытым небом проходит грандиозный фестиваль «Театральный бульвар». 21 июля наш театр стал
-        его гостем.
-      </p>
-      <p>Артисты "Жар-птицы" выступили на Чистопрудном бульваре с мастер-классом "Путешествие в страну Кукляндию".</p>
-      <p>
-        Главные герои этой истории - Пульчинелла, Пьеретта и Пьеро - стали проводниками в волшебную страну. Они рассказали ребятам и их родителям о
-        возникновении народного театра кукол, о героях уличных представлений разных народов мира, и, конечно, в их руках постоянно оживали персонажи
-        из спектаклей театра.
-      </p>
-      <p>Все было замечательно! Мы очень рады стать частью Фестиваля! Мы благодарим каждого, кто, несмотря на летний дождь, был с нами!</p>
-      <p>
-        «Театральный бульвар» проводится в рамках масштабного фестиваля «Лето в Москве. Все на улицу!». Он объединяет легендарные театры, знаменитые
-        вузы и студии. Москвичи и гости столицы становятся не только зрителями, но и участниками грандиозного события, которое продлится до 11
-        августа.
-      </p>
-      <p>Следите за программой на сайте <a href="https://teatr.mos.ru/#teatre">https://teatr.mos.ru/#teatre</a></p>
-
-      <img class="galery_temp" src="../../src/images/galery_temp.png" alt="" />
-
-      <a href="/news/" class="all-news-link">Читать другие новости театра</a>
-    </main>
-
-    <footer>
-      <div class="partners-wrapper">
-        <h2>Информационные партнеры</h2>
-        <a class="culture-link" href="http://www.culture.ru"> CULTURE.<span>RU</span> </a>
-        <div class="partners">
-          <a href="https://afisha.yandex.ru/moscow/theatre/places/teatr-kukol-zhar-ptitsa" target="_blank">
-            <img src="../../src/images/partners/yandex.png" />
-          </a>
-          <a target="_blank" href="http://ag.mos.ru/">
-            <img src="../../src/images/partners/ag.png" />
-          </a>
-          <a href="http://www.osd.ru/objinf.asp?ob=29" target="_blank">
-            <img src="../../src/images/partners/logo_osd_color.png" />
-          </a>
-          <a target="_blank" href="http://hrculturemos.ru/bank/">
-            <img src="../../src/images/partners/bank-vakansij.png" />
-          </a>
-          <a href="http://www.vao-mos.info" target="_blank">
-            <img src="../../src/images/partners/vostokrug.png" />
-          </a>
-          <a href="https://intickets.ru/" target="_blank">
-            <img src="../../src/images/partners/intickets.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="contacts">
-        <div class="width-limiter">
-          <div class="footer-nav">
-            <ul>
-              <li><a href="/">ГЛАВНАЯ</a></li>
-              <li><a href="/repertoire/">АФИША</a></li>
-              <li><a href="/news/" class="selected">НОВОСТИ</a></li>
-              <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
-              <li><a href="/about/">О ТЕАТРЕ</a></li>
-              <li><a href="/contacts/">КОНТАКТЫ</a></li>
-              <li><a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a></li>
-            </ul>
+            <p class="location">
+              107014 <br />Москва, ул. Стромынка, д. 3 <br />
+              м. Сокольники
+            </p>
           </div>
 
-          <address>
-            <div>
-              <div class="media">
-                <a href="https://vk.com/t_kukol" target="_blank">
-                  <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
-                </a>
-                <a href="https://www.ok.ru/group/55051763908621" target="_blank">
-                  <img src="../../src/icons/media/ok.png" alt="Одноклассники" />
-                </a>
-                <a href="https://t.me/mtk_zhar_ptitsa" target="_blank">
-                  <img src="../../src/icons/media/tg.png" alt="Телеграм" />
-                </a>
-                <a href="https://www.youtube.com/c/ТеатркуколжарптицаМосква" target="_blank">
-                  <img src="../../src/icons/media/yt.png" alt="Ютуб" />
-                </a>
-              </div>
-              <p class="location">
-                107014 <br />Москва, ул. Стромынка, д. 3 <br />
-                м. Сокольники
-              </p>
-            </div>
-
-            <div class="phone-numbers">
-              <p>Заказ билетов по телефону:</p>
-              <a href="tel:+74997480040">8(499)748-00-40</a>
-              <p>Телефон для справок:</p>
-              <a href="tel:+74997480038">8(499)748-00-38</a>
-            </div>
-          </address>
-        </div>
+          <div class="phone-numbers">
+            <p>Заказ билетов по телефону:</p>
+            <a href="tel:+74997480040">8(499)748-00-40</a>
+            <p>Телефон для справок:</p>
+            <a href="tel:+74997480038">8(499)748-00-38</a>
+          </div>
+        </address>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

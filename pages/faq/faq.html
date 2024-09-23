@@ -1,62 +1,379 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1060" />
-    <meta name="description" content='Ответы на частые вопросы по правилам посещения и приобретения билетов МТК "ЖАР-ПТИЦА"' />
-    <title>Вопрос-ответ | Московский театр кукол "ЖАР-ПТИЦА"</title>
-    <link rel="shortcut icon" href="../../src/icons/favicon.png" />
-    <link rel="stylesheet" href="../../src/css/global.css" />
-    <link rel="stylesheet" href="../../src/css/faq.css" />
-    <script defer src="faq.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="header-top">
-        <div class="width-limiter">
-          <a href="https://www.mos.ru/kultura/" class="department-wrapper">
-            <img src="../../src/images/department_logo.png" alt="Учреждение, подведомственное департаменту культуры города Москвы" />
-            <p>
-              Учреждение, подведомственное <br />
-              Департаменту культуры <br />
-              города Москвы
-            </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=1060" />
+  <meta name="description" content='Ответы на частые вопросы по правилам посещения и приобретения билетов МТК "ЖАР-ПТИЦА"' />
+  <title>Вопрос-ответ | Московский театр кукол "ЖАР-ПТИЦА"</title>
+  <link rel="shortcut icon" href="../../src/icons/favicon.png" />
+  <link rel="stylesheet" href="../../src/css/global.css" />
+  <link rel="stylesheet" href="../../src/css/faq.css" />
+  <script defer src="faq.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="width-limiter">
+        <a href="https://www.mos.ru/kultura/" class="department-wrapper">
+          <img src="../../src/images/department_logo.png" alt="Учреждение, подведомственное департаменту культуры города Москвы" />
+          <p>
+            Учреждение, подведомственное <br />
+            Департаменту культуры <br />
+            города Москвы
+          </p>
+        </a>
+
+        <form action="/search" method="get">
+          <input type="text" name="search" placeholder="Введите фразу для поиска" />
+          <button type="submit">
+            <img src="../../src/icons/search.png" alt="Поиск" />
+          </button>
+        </form>
+
+        <img class="cluture-img" src="../../src/images/npr_culture_left.png" alt="Культура, национальные проекты России" />
+
+        <div class="header-links">
+          <a href="?special_version=Y" target="_blank">
+            <img src="../../src/icons/vision.png" alt="Версия для слабовидящих" />
+            Версия для слабовидящих
           </a>
-
-          <form action="/search" method="get">
-            <input type="text" name="search" placeholder="Введите фразу для поиска" />
-            <button type="submit">
-              <img src="../../src/icons/search.png" alt="Поиск" />
-            </button>
-          </form>
-
-          <img class="cluture-img" src="../../src/images/npr_culture_left.png" alt="Культура, национальные проекты России" />
-
-          <div class="header-links">
-            <a href="?special_version=Y" target="_blank">
-              <img src="../../src/icons/vision.png" alt="Версия для слабовидящих" />
-              Версия для слабовидящих
-            </a>
-            <a href="https://organizations.kultura.mos.ru/organizations/gbuk_gmoskvy_moskovskii_teatr_zharptitsa.html" target="_blank">
-              <img src="../../src/icons/rate.png" alt="Оценить учреждение культуры" />
-              Оценить учреждение культуры
-            </a>
-            <a href="/faq" target="_blank">
-              <img src="../../src/icons/question.png" alt="Вопрос-ответ" />
-              Вопрос-ответ
-            </a>
-          </div>
+          <a href="https://organizations.kultura.mos.ru/organizations/gbuk_gmoskvy_moskovskii_teatr_zharptitsa.html" target="_blank">
+            <img src="../../src/icons/rate.png" alt="Оценить учреждение культуры" />
+            Оценить учреждение культуры
+          </a>
+          <a href="/faq" target="_blank">
+            <img src="../../src/icons/question.png" alt="Вопрос-ответ" />
+            Вопрос-ответ
+          </a>
         </div>
       </div>
+    </div>
 
-      <div class="header-middle">
-        <div class="width-limiter">
-          <a href="/" class="logo-wrapper">
-            <img src="../../src/images/main_logo.png" alt="ЖАР-ПТИЦА, театр кукол" />
-            <p>31-й театральный сезон</p>
-          </a>
-          <address>
+    <div class="header-middle">
+      <div class="width-limiter">
+        <a href="/" class="logo-wrapper">
+          <img src="../../src/images/main_logo.png" alt="ЖАР-ПТИЦА, театр кукол" />
+          <p>31-й театральный сезон</p>
+        </a>
+        <address>
+          <div class="media">
+            <a href="https://vk.com/t_kukol" target="_blank">
+              <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
+            </a>
+            <a href="https://www.ok.ru/group/55051763908621" target="_blank">
+              <img src="../../src/icons/media/ok.png" alt="Одноклассники" />
+            </a>
+            <a href="https://t.me/mtk_zhar_ptitsa" target="_blank">
+              <img src="../../src/icons/media/tg.png" alt="Телеграм" />
+            </a>
+            <a href="https://www.youtube.com/c/ТеатркуколжарптицаМосква" target="_blank">
+              <img src="../../src/icons/media/yt.png" alt="Ютуб" />
+            </a>
+          </div>
+          <p class="location">Москва, ул. Стромынка, д. 3</p>
+          <a class="tel" href="tel:+74997480040">8(499)748-00-40</a>
+        </address>
+      </div>
+    </div>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a href="/" class="selected">ГЛАВНАЯ</a></li>
+        <li><a href="/repertoire/">АФИША</a></li>
+        <li class="dropdown">
+          <a href="/news/">НОВОСТИ</a>
+          <ul>
+            <li><a href="/news/">Новости театра</a></li>
+            <li><a href="/news/novosti-kultury/">Новости ДК</a></li>
+          </ul>
+        </li>
+        <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
+        <li class="dropdown">
+          <a href="/about/">О ТЕАТРЕ</a>
+          <ul>
+            <li><a href="/about/">История театра</a></li>
+            <li><a href="/team/">Коллектив</a></li>
+            <li><a href="/30years/">Театру 30 лет</a></li>
+            <li><a href="/quality">Документы</a></li>
+          </ul>
+        </li>
+        <li><a href="/contacts/">КОНТАКТЫ</a></li>
+        <li class="dropdown">
+          <a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a>
+          <ul>
+            <li><a href="/repertoire/regulation/">Правила и льготы</a></li>
+            <li><a href="/quality/refund/">Возврат билетов</a></li>
+            <li><a href="/quality/evaluation/">Независимая оценка</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="width-limiter">
+    <h1>Вопрос-ответ</h1>
+
+    <div class="accordion">
+      <button>
+        <div></div>
+        <h2>КАКИЕ ЛЬГОТЫ ПРЕДОСТАВЛЯЮТСЯ ДЛЯ ОТДЕЛЬНЫХ КАТЕГОРИЙ ГРАЖДАН?</h2>
+        <div>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line"></div>
+        </div>
+      </button>
+
+      <div class="dropdown">
+        <div>
+          <p>
+            Льгота в размере 100% предоставляется детям-сиротам и детям, оставшимся без попечения родителей, обучающимся и студентам из числа
+            детей-сирот и детей, оставшихся без попечения родителей; детям-инвалидам; учащимся профильных средних и высших учебных учреждений.
+            <br />
+            <br />
+            Льгота 30% предоставляется ветеранам и инвалидам Великой Отечественной войны, жителям блокадного Ленинграда, несовершеннолетним узникам
+            фашизма; инвалидам и участникам войн в Афганистане и Чечне, ликвидаторам Чернобыльской аварии, героям СССР, героям России, героям
+            социалистического труда; военнослужащим, проходящим службу по призыву.
+            <br />
+            <br />
+            Льгота 20% предоставляется детям и родителям из многодетных семей.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button>
+        <div></div>
+        <h2>КАК ПРИОБРЕСТИ БИЛЕТ ОНЛАЙН?</h2>
+        <div>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line"></div>
+        </div>
+      </button>
+
+      <div class="dropdown">
+        <div>
+          <p>Для заказа билетов на сайте театра необходимо:</p>
+          <ul>
+            <li>Выбрать спектакль, на который хотите приобрести билет.</li>
+            <li>
+              Кликнуть на кнопку «Купить билет» справа от названия. Выбрать сеанс под надписью «Доступные даты». Выбрать на схеме зала нужные места
+              (меню «Цены / места» вверху страницы поможет определиться с подходящими ценовыми категориями). Уточнить стоимость, ряд и номер места
+              можно, если навести курсор на интересующее место на схеме.
+            </li>
+            <li>
+              Оформить заказ, кликнув курсором сначала по выбранному месту (местам) на схеме зала, а потом на кнопку «Купить» под схемой зала.
+            </li>
+            <li>Внимательно прочитать информацию на странице и удостовериться в правильности сделанного выбора.</li>
+            <li>
+              Вы можете оплатить билет банковской картой на сайте и получить на почту бланк электронного билета, распечатав который можно пройти в
+              театр.
+            </li>
+            <li>
+              Для прохода на спектакль надо будет предъявить оригинал билетного бланка, распечатку электронного билета или QR-код электронного
+              билета на экране Вашего мобильного устройства (смартфон, планшет и т.д.).
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button>
+        <div></div>
+        <h2>МОЖНО ЛИ ВЕРНУТЬ БИЛЕТ?</h2>
+        <div>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line"></div>
+        </div>
+      </button>
+
+      <div class="dropdown">
+        <div>
+          <p>
+            Полная стоимость билета возвращается исключительно в случаях отмены, замены или переноса спектакля на более поздний срок. В случае
+            отмены спектакля возврат билетов производится в кассе Театра в течение 10 календарных дней. В случае замены или переноса спектакля –
+            возврат билетов возможен только до начала замененного или перенесенного спектакля. Сервисный сбор, взимаемый распространителями и
+            билетными агентствами, Театром не возмещается.
+          </p>
+          <a href="https://teatr-zhar-ptitsa.ru/quality/refund/"> Читать все правила возврата билетов</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button>
+        <div></div>
+        <h2>В КАКОМ ВОЗРАСТЕ ДЕТИ МОГУТ ПОСЕЩАТЬ СПЕКТАКЛЬ БЕЗ РОДИТЕЛЕЙ?</h2>
+        <div>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line"></div>
+        </div>
+      </button>
+
+      <div class="dropdown">
+        <div>
+          <p>С 10 лет. Дети младше 10 лет могут посещать мероприятия Театра только в сопровождении родителей или иных законных представителей.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button>
+        <div></div>
+        <h2>СУЩЕСТВУЮТ ЛИ ПРАВИЛА ПОСЕЩЕНИЯ ТЕАТРА?</h2>
+        <div>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line"></div>
+        </div>
+      </button>
+
+      <div class="dropdown">
+        <div>
+          <p>
+            Приобретая билет на спектакли Театра, зритель соглашается с Правилами и обязуется соблюдать данные Правила и общественный порядок в
+            здании Театра.
+          </p>
+          <a href="https://teatr-zhar-ptitsa.ru/repertoire/regulation/">Читать правила посещения театра</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button>
+        <div></div>
+        <h2>КАК СДЕЛАТЬ КОЛЛЕКТИВНУЮ ЗАЯВКУ НА ПОСЕЩЕНИЕ СПЕКТАКЛЯ?</h2>
+        <div>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line"></div>
+        </div>
+      </button>
+
+      <div class="dropdown">
+        <div>
+          <p style="text-align: justify">
+            Вопросом оформления коллективных заявок занимается отдел Организации зрителя.
+            <br />
+            <br />
+            С понедельника по пятницу с 10:00 до 18:00 он принимает заявки по телефонам
+            <a class="link-in-text" href="tel:+74997480038">8 (499) 748-00-38</a> и
+            <a class="link-in-text" href="tel:+74997480039">8 (499) 748-00-39</a>, а также, по электронной почте
+            <a class="link-in-text" href="mailto:7480039@gmail.com">7480039@gmail.com</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button>
+        <div></div>
+        <h2>ГДЕ РАЗМЕЩЕНЫ ОФИЦИАЛЬНЫЕ ДОКУМЕНТЫ?</h2>
+        <div>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line"></div>
+        </div>
+      </button>
+
+      <div class="dropdown">
+        <div>
+          <p>Официальные документы собраны в соответствующем разделе на сайте "О театре" -&gt; "Документы".</p>
+          <a href="https://teatr-zhar-ptitsa.ru/quality/">Перейти в раздел "Документы"</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button>
+        <div></div>
+        <h2>НУЖНО ЛИ ПОКУПАТЬ БИЛЕТ МАЛЕНЬКОМУ РЕБЕНКУ?</h2>
+        <div>
+          <div class="vertical-line"></div>
+          <div class="horizontal-line"></div>
+        </div>
+      </button>
+
+      <div class="dropdown">
+        <div>
+          <p>
+            У каждого зрителя, большого или маленького, независимо от возраста, должен быть билет. Исключение составляет "Семейный" билет на
+            спектакли в фойе.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <form id="contactForm">
+      <p class="contact-form-title">НЕ НАШЛИ ОТВЕТ НА ВАШ ВОПРОС? НАПИШИТЕ НАМ!</p>
+
+      <input type="text" name="name" id="formName" placeholder="Имя" required />
+
+      <input type="text" name="phone" id="formPhone" placeholder="Телефон" />
+
+      <input type="email" name="email" id="formEmail" placeholder="Email" />
+
+      <textarea rows="3" name="message" id="formMessage" placeholder="Ваш вопрос" required></textarea>
+
+      <!-- <div id="msgSubmit" class="h3 text-success text-center hidden">Сообщение отправлено</div>
+        <div id="msgError" class="h3 text-danger text-center hidden">Не заполнено поле Email или Телефон</div> -->
+
+      <div class="footer">
+        <p>
+          Нажимая кнопку "Отправить"<br />
+          Вы даете согласие на обработку Ваших персональных данных
+        </p>
+        <button type="submit">ОТПРАВИТЬ</button>
+      </div>
+
+      <input type="hidden" id="token" name="g-recaptcha-response"
+        value="03AFcWeA7wvP1oNlD7CEzMj_mvtJ2q4UmWh9KtorRf9Nv8GT_qArOy-PTObbZndQFbCcqPlh_Kck3_g0cQLq2FUh7CH8vKjuRPuTSQ2kGmxXjMqVqjm7ukUOzx1qZFoLvrGoj6thisKOedmK2QK0QY-rKbpY_DdwSonj0lMCKXhrlu031zGCv655rqc8xYShhTz7491kYglrPtftas-hs8YRgESx6cMbQw8KFDRGaPqZ5wE8kV1j2aRpLF9VMlApZViHrHlTP5EnHNcOK4TUse937l5DLshfnY4xw00lcq5a502Y4rjT9PLuEmU0kxqQsvKgRGtA72p7jGxO-GkYhSqEhQs_yUKDwGnii42YdHKUgcEgHhNopU7jnY0pawQZCoJpT3wQR25gWKg808s6tLoNJ3O5zPFdBXi8-rOrTlvdC_ijAM0kel-_R-A_AIVIjxEPz6cxGgsCCrNLrOQmwCcqtl9-mLuFqjTyn9OGftoWI2nUFhdEVPXG2TbHq83JWmIsLt6DoIF-xhWxINuvVoruyZtKQHnlfjx0N7KsPtSXj-GQIxeC0UExPFu7l59mFCCYftTWr2GbV0JBV6iwERc1arDFiNzigdZnp_ZkuNob7dsuCqKqFTSdnfTOCCd9S0D5Xda4Mcc3UX6s8reBrR9KuF-iKVYXHmpCegxRdZlAYLQOADy_nis2UqVipFKdq5NFkrExdRMLdjz8bFwQ8cOFg7jqpfzqMPBGaKaCketC_yYibx9FNLNKNQpfHaOQLvr7jbFjtfFFGqD5VyoF-locpmk15L-O72lkqzmL8MqMqtBV7c0mxov80wCTx5ttSgmSHoATMA4GT-pJ3-9giVHyYoW_KisrxFyg" />
+    </form>
+  </main>
+
+  <footer>
+    <div class="partners-wrapper">
+      <h2>Информационные партнеры</h2>
+      <a class="culture-link" href="http://www.culture.ru"> CULTURE.<span>RU</span> </a>
+      <div class="partners">
+        <a href="https://afisha.yandex.ru/moscow/theatre/places/teatr-kukol-zhar-ptitsa" target="_blank">
+          <img src="../../src/images/partners/yandex.png" />
+        </a>
+        <a target="_blank" href="http://ag.mos.ru/">
+          <img src="../../src/images/partners/ag.png" />
+        </a>
+        <a href="http://www.osd.ru/objinf.asp?ob=29" target="_blank">
+          <img src="../../src/images/partners/logo_osd_color.png" />
+        </a>
+        <a target="_blank" href="http://hrculturemos.ru/bank/">
+          <img src="../../src/images/partners/bank-vakansij.png" />
+        </a>
+        <a href="http://www.vao-mos.info" target="_blank">
+          <img src="../../src/images/partners/vostokrug.png" />
+        </a>
+        <a href="https://intickets.ru/" target="_blank">
+          <img src="../../src/images/partners/intickets.png" />
+        </a>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="width-limiter">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="/" class="selected">ГЛАВНАЯ</a></li>
+            <li><a href="/repertoire/">АФИША</a></li>
+            <li><a href="/news/">НОВОСТИ</a></li>
+            <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
+            <li><a href="/about/">О ТЕАТРЕ</a></li>
+            <li><a href="/contacts/">КОНТАКТЫ</a></li>
+            <li><a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a></li>
+          </ul>
+        </div>
+
+        <address>
+          <div>
             <div class="media">
               <a href="https://vk.com/t_kukol" target="_blank">
                 <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
@@ -71,340 +388,22 @@
                 <img src="../../src/icons/media/yt.png" alt="Ютуб" />
               </a>
             </div>
-            <p class="location">Москва, ул. Стромынка, д. 3</p>
-            <a class="tel" href="tel:+74997480040">8(499)748-00-40</a>
-          </address>
-        </div>
-      </div>
-
-      <nav class="header-nav">
-        <ul>
-          <li><a href="/" class="selected">ГЛАВНАЯ</a></li>
-          <li><a href="/repertoire/">АФИША</a></li>
-          <li class="dropdown">
-            <a href="/news/">НОВОСТИ</a>
-            <ul>
-              <li><a href="/news/">Новости театра</a></li>
-              <li><a href="/news/novosti-kultury/">Новости ДК</a></li>
-            </ul>
-          </li>
-          <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
-          <li class="dropdown">
-            <a href="/about/">О ТЕАТРЕ</a>
-            <ul>
-              <li><a href="/about/">История театра</a></li>
-              <li><a href="/team/">Коллектив</a></li>
-              <li><a href="/30years/">Театру 30 лет</a></li>
-              <li><a href="/quality">Документы</a></li>
-            </ul>
-          </li>
-          <li><a href="/contacts/">КОНТАКТЫ</a></li>
-          <li class="dropdown">
-            <a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a>
-            <ul>
-              <li><a href="/repertoire/regulation/">Правила и льготы</a></li>
-              <li><a href="/quality/refund/">Возврат билетов</a></li>
-              <li><a href="/quality/evaluation/">Независимая оценка</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="width-limiter">
-      <h1>Вопрос-ответ</h1>
-
-      <div class="accordion">
-        <button>
-          <div></div>
-          <h2>КАКИЕ ЛЬГОТЫ ПРЕДОСТАВЛЯЮТСЯ ДЛЯ ОТДЕЛЬНЫХ КАТЕГОРИЙ ГРАЖДАН?</h2>
-          <div>
-            <div class="vertical-line"></div>
-            <div class="horizontal-line"></div>
-          </div>
-        </button>
-
-        <div class="dropdown">
-          <div>
-            <p>
-              Льгота в размере 100% предоставляется детям-сиротам и детям, оставшимся без попечения родителей, обучающимся и студентам из числа
-              детей-сирот и детей, оставшихся без попечения родителей; детям-инвалидам; учащимся профильных средних и высших учебных учреждений.
-              <br />
-              <br />
-              Льгота 30% предоставляется ветеранам и инвалидам Великой Отечественной войны, жителям блокадного Ленинграда, несовершеннолетним узникам
-              фашизма; инвалидам и участникам войн в Афганистане и Чечне, ликвидаторам Чернобыльской аварии, героям СССР, героям России, героям
-              социалистического труда; военнослужащим, проходящим службу по призыву.
-              <br />
-              <br />
-              Льгота 20% предоставляется детям и родителям из многодетных семей.
+            <p class="location">
+              107014 <br />Москва, ул. Стромынка, д. 3 <br />
+              м. Сокольники
             </p>
           </div>
-        </div>
+
+          <div class="phone-numbers">
+            <p>Заказ билетов по телефону:</p>
+            <a href="tel:+74997480040">8(499)748-00-40</a>
+            <p>Телефон для справок:</p>
+            <a href="tel:+74997480038">8(499)748-00-38</a>
+          </div>
+        </address>
       </div>
+    </div>
+  </footer>
+</body>
 
-      <div class="accordion">
-        <button>
-          <div></div>
-          <h2>КАК ПРИОБРЕСТИ БИЛЕТ ОНЛАЙН?</h2>
-          <div>
-            <div class="vertical-line"></div>
-            <div class="horizontal-line"></div>
-          </div>
-        </button>
-
-        <div class="dropdown">
-          <div>
-            <p>Для заказа билетов на сайте театра необходимо:</p>
-            <ul>
-              <li>Выбрать спектакль, на который хотите приобрести билет.</li>
-              <li>
-                Кликнуть на кнопку «Купить билет» справа от названия. Выбрать сеанс под надписью «Доступные даты». Выбрать на схеме зала нужные места
-                (меню «Цены / места» вверху страницы поможет определиться с подходящими ценовыми категориями). Уточнить стоимость, ряд и номер места
-                можно, если навести курсор на интересующее место на схеме.
-              </li>
-              <li>
-                Оформить заказ, кликнув курсором сначала по выбранному месту (местам) на схеме зала, а потом на кнопку «Купить» под схемой зала.
-              </li>
-              <li>Внимательно прочитать информацию на странице и удостовериться в правильности сделанного выбора.</li>
-              <li>
-                Вы можете оплатить билет банковской картой на сайте и получить на почту бланк электронного билета, распечатав который можно пройти в
-                театр.
-              </li>
-              <li>
-                Для прохода на спектакль надо будет предъявить оригинал билетного бланка, распечатку электронного билета или QR-код электронного
-                билета на экране Вашего мобильного устройства (смартфон, планшет и т.д.).
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <button>
-          <div></div>
-          <h2>МОЖНО ЛИ ВЕРНУТЬ БИЛЕТ?</h2>
-          <div>
-            <div class="vertical-line"></div>
-            <div class="horizontal-line"></div>
-          </div>
-        </button>
-
-        <div class="dropdown">
-          <div>
-            <p>
-              Полная стоимость билета возвращается исключительно в случаях отмены, замены или переноса спектакля на более поздний срок. В случае
-              отмены спектакля возврат билетов производится в кассе Театра в течение 10 календарных дней. В случае замены или переноса спектакля –
-              возврат билетов возможен только до начала замененного или перенесенного спектакля. Сервисный сбор, взимаемый распространителями и
-              билетными агентствами, Театром не возмещается.
-            </p>
-            <a href="https://teatr-zhar-ptitsa.ru/quality/refund/"> Читать все правила возврата билетов</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <button>
-          <div></div>
-          <h2>В КАКОМ ВОЗРАСТЕ ДЕТИ МОГУТ ПОСЕЩАТЬ СПЕКТАКЛЬ БЕЗ РОДИТЕЛЕЙ?</h2>
-          <div>
-            <div class="vertical-line"></div>
-            <div class="horizontal-line"></div>
-          </div>
-        </button>
-
-        <div class="dropdown">
-          <div>
-            <p>С 10 лет. Дети младше 10 лет могут посещать мероприятия Театра только в сопровождении родителей или иных законных представителей.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <button>
-          <div></div>
-          <h2>СУЩЕСТВУЮТ ЛИ ПРАВИЛА ПОСЕЩЕНИЯ ТЕАТРА?</h2>
-          <div>
-            <div class="vertical-line"></div>
-            <div class="horizontal-line"></div>
-          </div>
-        </button>
-
-        <div class="dropdown">
-          <div>
-            <p>
-              Приобретая билет на спектакли Театра, зритель соглашается с Правилами и обязуется соблюдать данные Правила и общественный порядок в
-              здании Театра.
-            </p>
-            <a href="https://teatr-zhar-ptitsa.ru/repertoire/regulation/">Читать правила посещения театра</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <button>
-          <div></div>
-          <h2>КАК СДЕЛАТЬ КОЛЛЕКТИВНУЮ ЗАЯВКУ НА ПОСЕЩЕНИЕ СПЕКТАКЛЯ?</h2>
-          <div>
-            <div class="vertical-line"></div>
-            <div class="horizontal-line"></div>
-          </div>
-        </button>
-
-        <div class="dropdown">
-          <div>
-            <p style="text-align: justify">
-              Вопросом оформления коллективных заявок занимается отдел Организации зрителя.
-              <br />
-              <br />
-              С понедельника по пятницу с 10:00 до 18:00 он принимает заявки по телефонам
-              <a class="link-in-text" href="tel:+74997480038">8 (499) 748-00-38</a> и
-              <a class="link-in-text" href="tel:+74997480039">8 (499) 748-00-39</a>, а также, по электронной почте
-              <a class="link-in-text" href="mailto:7480039@gmail.com">7480039@gmail.com</a>.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <button>
-          <div></div>
-          <h2>ГДЕ РАЗМЕЩЕНЫ ОФИЦИАЛЬНЫЕ ДОКУМЕНТЫ?</h2>
-          <div>
-            <div class="vertical-line"></div>
-            <div class="horizontal-line"></div>
-          </div>
-        </button>
-
-        <div class="dropdown">
-          <div>
-            <p>Официальные документы собраны в соответствующем разделе на сайте "О театре" -&gt; "Документы".</p>
-            <a href="https://teatr-zhar-ptitsa.ru/quality/">Перейти в раздел "Документы"</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <button>
-          <div></div>
-          <h2>НУЖНО ЛИ ПОКУПАТЬ БИЛЕТ МАЛЕНЬКОМУ РЕБЕНКУ?</h2>
-          <div>
-            <div class="vertical-line"></div>
-            <div class="horizontal-line"></div>
-          </div>
-        </button>
-
-        <div class="dropdown">
-          <div>
-            <p>
-              У каждого зрителя, большого или маленького, независимо от возраста, должен быть билет. Исключение составляет "Семейный" билет на
-              спектакли в фойе.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <form id="contactForm">
-        <p class="contact-form-title">НЕ НАШЛИ ОТВЕТ НА ВАШ ВОПРОС? НАПИШИТЕ НАМ!</p>
-
-        <input type="text" name="name" id="formName" placeholder="Имя" required />
-
-        <input type="text" name="phone" id="formPhone" placeholder="Телефон" />
-
-        <input type="email" name="email" id="formEmail" placeholder="Email" />
-
-        <textarea rows="3" name="message" id="formMessage" placeholder="Ваш вопрос" required></textarea>
-
-        <!-- <div id="msgSubmit" class="h3 text-success text-center hidden">Сообщение отправлено</div>
-        <div id="msgError" class="h3 text-danger text-center hidden">Не заполнено поле Email или Телефон</div> -->
-
-        <div class="footer">
-          <p>
-            Нажимая кнопку "Отправить"<br />
-            Вы даете согласие на обработку Ваших персональных данных
-          </p>
-          <button type="submit">ОТПРАВИТЬ</button>
-        </div>
-
-        <input
-          type="hidden"
-          id="token"
-          name="g-recaptcha-response"
-          value="03AFcWeA7wvP1oNlD7CEzMj_mvtJ2q4UmWh9KtorRf9Nv8GT_qArOy-PTObbZndQFbCcqPlh_Kck3_g0cQLq2FUh7CH8vKjuRPuTSQ2kGmxXjMqVqjm7ukUOzx1qZFoLvrGoj6thisKOedmK2QK0QY-rKbpY_DdwSonj0lMCKXhrlu031zGCv655rqc8xYShhTz7491kYglrPtftas-hs8YRgESx6cMbQw8KFDRGaPqZ5wE8kV1j2aRpLF9VMlApZViHrHlTP5EnHNcOK4TUse937l5DLshfnY4xw00lcq5a502Y4rjT9PLuEmU0kxqQsvKgRGtA72p7jGxO-GkYhSqEhQs_yUKDwGnii42YdHKUgcEgHhNopU7jnY0pawQZCoJpT3wQR25gWKg808s6tLoNJ3O5zPFdBXi8-rOrTlvdC_ijAM0kel-_R-A_AIVIjxEPz6cxGgsCCrNLrOQmwCcqtl9-mLuFqjTyn9OGftoWI2nUFhdEVPXG2TbHq83JWmIsLt6DoIF-xhWxINuvVoruyZtKQHnlfjx0N7KsPtSXj-GQIxeC0UExPFu7l59mFCCYftTWr2GbV0JBV6iwERc1arDFiNzigdZnp_ZkuNob7dsuCqKqFTSdnfTOCCd9S0D5Xda4Mcc3UX6s8reBrR9KuF-iKVYXHmpCegxRdZlAYLQOADy_nis2UqVipFKdq5NFkrExdRMLdjz8bFwQ8cOFg7jqpfzqMPBGaKaCketC_yYibx9FNLNKNQpfHaOQLvr7jbFjtfFFGqD5VyoF-locpmk15L-O72lkqzmL8MqMqtBV7c0mxov80wCTx5ttSgmSHoATMA4GT-pJ3-9giVHyYoW_KisrxFyg"
-        />
-      </form>
-    </main>
-
-    <footer>
-      <div class="partners-wrapper">
-        <h2>Информационные партнеры</h2>
-        <a class="culture-link" href="http://www.culture.ru"> CULTURE.<span>RU</span> </a>
-        <div class="partners">
-          <a href="https://afisha.yandex.ru/moscow/theatre/places/teatr-kukol-zhar-ptitsa" target="_blank">
-            <img src="../../src/images/partners/yandex.png" />
-          </a>
-          <a target="_blank" href="http://ag.mos.ru/">
-            <img src="../../src/images/partners/ag.png" />
-          </a>
-          <a href="http://www.osd.ru/objinf.asp?ob=29" target="_blank">
-            <img src="../../src/images/partners/logo_osd_color.png" />
-          </a>
-          <a target="_blank" href="http://hrculturemos.ru/bank/">
-            <img src="../../src/images/partners/bank-vakansij.png" />
-          </a>
-          <a href="http://www.vao-mos.info" target="_blank">
-            <img src="../../src/images/partners/vostokrug.png" />
-          </a>
-          <a href="https://intickets.ru/" target="_blank">
-            <img src="../../src/images/partners/intickets.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="contacts">
-        <div class="width-limiter">
-          <div class="footer-nav">
-            <ul>
-              <li><a href="/" class="selected">ГЛАВНАЯ</a></li>
-              <li><a href="/repertoire/">АФИША</a></li>
-              <li><a href="/news/">НОВОСТИ</a></li>
-              <li><a href="/theatricals/">СПЕКТАКЛИ</a></li>
-              <li><a href="/about/">О ТЕАТРЕ</a></li>
-              <li><a href="/contacts/">КОНТАКТЫ</a></li>
-              <li><a href="/repertoire/regulation/">ЗРИТЕЛЯМ</a></li>
-            </ul>
-          </div>
-
-          <address>
-            <div>
-              <div class="media">
-                <a href="https://vk.com/t_kukol" target="_blank">
-                  <img src="../../src/icons/media/vk.png" alt="Вконтакте" />
-                </a>
-                <a href="https://www.ok.ru/group/55051763908621" target="_blank">
-                  <img src="../../src/icons/media/ok.png" alt="Одноклассники" />
-                </a>
-                <a href="https://t.me/mtk_zhar_ptitsa" target="_blank">
-                  <img src="../../src/icons/media/tg.png" alt="Телеграм" />
-                </a>
-                <a href="https://www.youtube.com/c/ТеатркуколжарптицаМосква" target="_blank">
-                  <img src="../../src/icons/media/yt.png" alt="Ютуб" />
-                </a>
-              </div>
-              <p class="location">
-                107014 <br />Москва, ул. Стромынка, д. 3 <br />
-                м. Сокольники
-              </p>
-            </div>
-
-            <div class="phone-numbers">
-              <p>Заказ билетов по телефону:</p>
-              <a href="tel:+74997480040">8(499)748-00-40</a>
-              <p>Телефон для справок:</p>
-              <a href="tel:+74997480038">8(499)748-00-38</a>
-            </div>
-          </address>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>

@@ -45,7 +45,6 @@
 }
 
 /* upcoming shows */
-
 section .title {
   text-align: center;
 }
@@ -185,7 +184,6 @@ section .title h2 {
 }
 
 /* news */
-
 .news-section .title {
   margin-block: 70px 50px;
 }
@@ -211,7 +209,6 @@ section .title h2 {
 }
 
 /* poster */
-
 .poster-section .title {
   margin-block: 50px;
 }
@@ -271,7 +268,6 @@ section .title h2 {
 }
 
 /* swiper */
-
 .swiper {
   --swiper-pagination-color: var(--primary-color) !important;
 }
@@ -287,6 +283,7 @@ section .title h2 {
 }
 
 @media (width<1260px) {
+
   .swiper-button-prev,
   .swiper-button-next {
     display: none !important;
