@@ -8,7 +8,10 @@
 }
 
 .main-shows img {
-  width: 100%;
+  /* aspect-ratio:  / 1; */
+  max-width: 100%;
+  object-fit: contain;
+  margin-inline: auto;
 }
 
 .main-shows .show :is(h2, a, p) {
@@ -75,7 +78,7 @@ section .title h2 {
 }
 
 .upcoming-shows .show > img {
-  width: 100%;
+  max-width: 100%;
   aspect-ratio: 10/9;
 }
 
@@ -190,7 +193,7 @@ section .title h2 {
 }
 
 .news a img {
-  width: 100%;
+  max-width: 100%;
   aspect-ratio: 16/11;
 }
 
