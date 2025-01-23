@@ -8,10 +8,8 @@
 }
 
 .main-shows img {
-  /* aspect-ratio:  / 1; */
-  max-width: 100%;
-  object-fit: contain;
-  margin-inline: auto;
+  aspect-ratio: 1804 / 630;
+  width: 100%;
 }
 
 .main-shows .show :is(h2, a, p) {
