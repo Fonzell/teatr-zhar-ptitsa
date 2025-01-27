@@ -222,6 +222,14 @@ section .title h2 {
   text-align: end;
 }
 
+.poster-shows .show > time span {
+  display: block;
+  color: #000;
+  font-weight: 800;
+  font-size: 25px;
+  margin-block: -30px 10px;
+}
+
 .poster-shows .show .data {
   flex-grow: 1;
 }
