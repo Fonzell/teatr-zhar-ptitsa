@@ -61,8 +61,9 @@ main h2 {
 }
 
 @media (width<1260px) {
-  .poster-shows .show .location {
-    display: block !important;
+  .poster-shows .show p.location {
+    display: block;
+    width: fit-content;
   }
 }
 
@@ -82,8 +83,7 @@ main h2 {
 }
 
 .poster-shows .show .location .more {
-  left: 50px;
-  width: 350px;
+  right: 0;
 }
 
 .poster-section .title {
@@ -124,7 +124,7 @@ main h2 {
   width: 240px;
 }
 
-.poster-shows .show .data .location {
+.poster-shows .show .location {
   display: inline;
 }
 

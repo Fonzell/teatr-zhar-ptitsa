@@ -76,6 +76,7 @@ section .title h2 {
 
 .upcoming-shows .show > img {
   max-width: 100%;
+  width: 100%;
   aspect-ratio: 10/9;
 }
 
@@ -140,14 +141,14 @@ section .title h2 {
 
 .upcoming-shows .show .location .info,
 .poster-shows .show .location .info {
-  display: inline-block;
   font-weight: 800;
   text-decoration: underline;
 }
 
 @media (width<1260px) {
-  .poster-shows .show .location {
-    display: block !important;
+  .poster-shows .show p.location {
+    display: block;
+    width: fit-content;
   }
 }
 
@@ -171,11 +172,11 @@ section .title h2 {
 
 .upcoming-shows .show .location .more {
   margin-inline: 20px;
+  right: 0;
 }
 
 .poster-shows .show .location .more {
-  left: 50px;
-  width: 350px;
+  right: 0;
 }
 
 /* news */
@@ -191,6 +192,7 @@ section .title h2 {
 
 .news a img {
   max-width: 100%;
+  width: 100%;
   aspect-ratio: 16/11;
 }
 
@@ -250,7 +252,7 @@ section .title h2 {
   width: 240px;
 }
 
-.poster-shows .show .data .location {
+.poster-shows .show .location {
   display: inline;
 }
 
